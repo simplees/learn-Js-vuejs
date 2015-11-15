@@ -4,6 +4,10 @@
 ## 先把官网教程看一遍,跟着做些简单的demo
 > [地址:http://cn.vuejs.org/guide/index.html](http://cn.vuejs.org/guide/index.html)
 
+## 学习ue-resource 进行ajax操作
+
+## 学习vue-router 实现单页面的前端
+
 * 1. 下载安装vuejs
 ```
 npm install vue
