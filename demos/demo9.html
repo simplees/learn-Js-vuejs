@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo9 计算属性 vs.$watch</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/boot4/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/css/base.css">
+</head>
+<body>
+
+<div id="demo">
+    {{ fullName }}
+</div>
+
+<script src="assets/boot4/jquery.min.js"></script>
+<script src="assets/boot4/bootstrap.min.js"></script>
+<script src="assets/vuejs/vue.min.js"></script>
+
+<script>
+    var vm = new Vue({
+        el:'#demo',
+        data: {
+            firstName: 'Foo',
+            lastName: 'Bar',
+            fullName: 'Foo Bar'
+        }
+    });
+
+    vm.$watch('firstName', function (val) {
+        this.fullName = val + ' ' + this.lastName
+    });
+
+    vm.$watch('lastName', function (val) {
+        this.fullName = this.firstName + ' ' + val
+    });
+
+    var vm2  = new Vue({
+        el : '#demo',
+        data : {
+            firstName : 'Foo',
+            lastName : 'Bar'
+        },
+        computed : {
+            fullName : function () {
+                return this.firstName + ' ' + this.lastName
+            }
+        }
+    });
+
+    /*  $watch 监控 vm 实例中的数据,动态生成结果数据, 在console中,对vm.firstName = 'ok'赋值 fullName 将改变 */
+</script>
+</body>
+</html>
