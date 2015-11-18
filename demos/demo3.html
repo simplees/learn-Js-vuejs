@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>demo1 Hello Vuejs</title>
+    <title>Demo3 渲染列表</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,20 +10,28 @@
 </head>
 <body>
 <div id="app">
-    {{ message }}
+    <ul>
+        <li v-for="todo in todos">{{ todo.text }}</li>
+    </ul>
 </div>
+
+
 <script src="assets/boot4/jquery.min.js"></script>
 <script src="assets/boot4/bootstrap.min.js"></script>
 <script src="assets/vuejs/vue.min.js"></script>
-
 <script>
     new Vue({
         el:'#app',
         data:{
-            message:'Hello, Vue JS!'
+            todos : [
+                {text:'learn js'},
+                {text:'learn vuejs'},
+                {text:'Do vuejs'}
+            ]
         }
     });
 </script>
+
 
 </body>
 </html>

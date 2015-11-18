@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>demo1 Hello Vuejs</title>
+    <title>demo2 数据双向绑定</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,8 +10,11 @@
 </head>
 <body>
 <div id="app">
-    {{ message }}
+    <p>{{message}}</p>
+    <input v-model="message">
 </div>
+
+
 <script src="assets/boot4/jquery.min.js"></script>
 <script src="assets/boot4/bootstrap.min.js"></script>
 <script src="assets/vuejs/vue.min.js"></script>
@@ -20,10 +23,9 @@
     new Vue({
         el:'#app',
         data:{
-            message:'Hello, Vue JS!'
+            message:'Hello Vuejs'
         }
     });
 </script>
-
 </body>
 </html>
