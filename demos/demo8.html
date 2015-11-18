@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>view model 第二个列子</title>
+    <title>vue实例</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,24 +9,12 @@
     <link rel="stylesheet" href="assets/css/css/base.css">
 </head>
 <body>
-<div id="app">
-    <p v-if="greeting">Hello!</p>
-    <p v-if="! greeting">FALSE</p>
-</div>
+
+<!--组件系统 让我们可以用独立可复用的小组件来构建大型应用。-->
 
 <script src="assets/boot4/jquery.min.js"></script>
 <script src="assets/boot4/bootstrap.min.js"></script>
 <script src="assets/vuejs/vue.min.js"></script>
-
-<script>
-    var vm2 = new Vue({
-        el: '#app',
-        data:{
-            greeting:false
-        }
-    });
-</script>
-<!--控制台设置 exampleVM2.greeting 为 false，-->
 
 </body>
 </html>
