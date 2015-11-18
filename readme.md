@@ -8,73 +8,34 @@
 
 ## 学习vue-router 实现单页面的前端
 
-* 1. 下载安装vuejs
+
+* vuejs CDN
 ```
-npm install vue
-//在用 Vue.js 构建大型应用时推荐使用 NPM 安装，NPM 能很好地和诸如 Webpack 或 Browserify 的 CommonJS 模块打包器配合使用。Vue.js 也提供配套工具来开发单文件组件。
+http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.8/vue.min.js
 
-```
-
-* 数据绑定
-```
-v-text="message" 或者 {{ message }}
-
-new Vue(
-    el:'#app' //绑定作用域
-    data: {
-        message:'Hello Vuejs'
-    }
-)
-
+http://cdn.jsdelivr.net/vue/1.0.8/vue.min.js
 ```
 
-* 双向绑定
+* boot4 模板
+> http://wiki.jikexueyuan.com/project/bootstrap4/getting-started/introduction/
 ```
-即将v-text 和v-model同时设置
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="http://ajax.useso.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>
 ```
-
-* 渲染列表用v-for
-```
-<div id="#app"> //作用域
-<ul>
-    <li v-for = 'todo in todos'>
-        {{todo.text}}
-    </li>
-</ul>
-</div>
-
-
-new Vue({
-    el: '#app',
-    data: {
-        todos:[
-        { text: 'learn1'},
-        { text: '2'},
-        { text: '3' }
-    ]
-}
-
-})
-
-```
-
-* 处理用户输入 v-on:click = 'method'
-```
-v-on:click = 'msg'
-
-new Vue({
-    el: '#app',
-    data:{
-    msg: 'hello'
-},
-methods:{
-    msg: function () {
-    this.msg = this.msg.split('').reverse().join('')
-}
-
-}
-})
-```
-
-* 综合示例
-<div id = "app">
