@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>综合todolist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/boot4/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/css/base.css">
+</head>
+<body>
+
+<div id="app">
+    <input v-model="newtodo" v-on:keyup.enter="addtodo">
+    <ul>
+        <li v-for="todo in todos">
+            <span>{{ todo.text }}</span>
+            <button v-on:click='removetodo($index)'> 删除</button>
+
+        </li>
+    </ul>
+</div>
+
+<script src="assets/boot4/jquery.min.js"></script>
+<script src="assets/boot4/bootstrap.min.js"></script>
+<script src="assets/vuejs/vue.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            newtodo: '',
+            todos: [
+                {text: 'add some todos'}
+            ]
+        },
+        methods: {
+            addtodo: function () {
+                var text = this.newtodo.trim();
+                if (text) {
+                    this.todos.push({text: text});
+                    this.newtodo = '';
+                }
+
+            },
+            removetodo: function (index) {
+                this.todos.splice(index, 1);
+                //splice() 方法向/从数组中添加/删除项目，然后返回被删除的项目。
+            }
+        }
+    });
+</script>
+
+
+</body>
+</html>
