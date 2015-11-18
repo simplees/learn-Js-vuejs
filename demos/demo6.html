@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
+    <title>双向数据绑定</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,10 +9,39 @@
     <link rel="stylesheet" href="assets/css/css/base.css">
 </head>
 <body>
+<!--Vue.js 的核心是一个响应的数据绑定系统，它让数据与 DOM 保持同步非常简单。
+在使用 jQuery 手工操作 DOM 时，我们的代码常常是命令式的、重复的与易错的。
+Vue.js 拥抱数据驱动的视图概念。通俗地讲，它意味着我们在普通 HTML 模板中使用特殊的语法将 DOM “绑定”到底层数据。
+一旦创建了绑定，DOM 将与数据保持同步。每当修改了数据，DOM 便相应地更新。
+这样我们应用中的逻辑就几乎都是直接修改数据了，不必与 DOM 更新搅在一起。
+这让我们的代码更容易撰写、理解与维护。-->
+
+<div id="app">
+    Hello {{ name }}
+</div>
 
 <script src="assets/boot4/jquery.min.js"></script>
 <script src="assets/boot4/bootstrap.min.js"></script>
 <script src="assets/vuejs/vue.min.js"></script>
 
+<script>
+    var exampleData = {
+        name : ' Test'
+    }
+
+    var exampleVM = new Vue({
+        el: '#app',
+        data : exampleData
+    });
+
+</script>
+
+<!--
+看起来这跟单单渲染一个模板非常类似，但是 Vue.js 在背后做了大量工作。
+并且 DOM 会自动响应数据的变化。
+我们如何知道？打开你的浏览器的控制台，修改 exampleData.name，你将看到上例相应地更新。
+注意我们不需要撰写任何 DOM 操作代码：被绑定增强的 HTML 模板是底层数据状态的声明式的映射，数据不过是普通 JavaScript 对象。我们的视图完全由数据驱动。
+
+-->
 </body>
 </html>
