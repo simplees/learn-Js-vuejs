@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>vue实例</title>
+    <title>Demo8 计算属性</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,11 +10,29 @@
 </head>
 <body>
 
-<!--组件系统 让我们可以用独立可复用的小组件来构建大型应用。-->
+<div id="app">
+    a = {{a}},b = {{ b }}
+</div>
 
 <script src="assets/boot4/jquery.min.js"></script>
 <script src="assets/boot4/bootstrap.min.js"></script>
 <script src="assets/vuejs/vue.min.js"></script>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data : {
+            a : 1
+        },
+        computed : { //计算,如果需要多于一个表达式的逻辑，应当使用计算属性,vm.b 的值始终取决于 vm.a 的值。
+            //getter
+            b: function () {
+                //'this' 指向 vm实例
+                return this.a  +1
+            }
+        }
+    });
+</script>
 
 </body>
 </html>
