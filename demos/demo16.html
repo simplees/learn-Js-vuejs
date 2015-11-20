@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>父子组件传毒数据 用Props</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/boot4/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/css/base.css">
+</head>
+<body>
+<div id="demo">
+    <child msg="hello!xxx"></child>
+</div>
+
+<script src="assets/boot4/jquery.min.js"></script>
+<script src="assets/boot4/bootstrap.min.js"></script>
+<script src="assets/vuejs/vue.min.js"></script>
+
+<script>
+    Vue.component('child',{
+        //声明props
+        props:['msg'],
+
+        //prop 可以用在模板内
+        //可以用 this.msg 设置
+        template : '<span>{{msg}}</span>'
+    })
+
+    new Vue({
+        el:'#demo'
+    })
+</script>
+
+</body>
+</html>
