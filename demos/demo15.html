@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>局部注册组件</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/boot4/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/css/base.css">
+</head>
+<body>
+
+<!--局部组件预先放在在全局组件之内的template中了-->
+<div id="demo">
+    <pcomponent></pcomponent>
+</div>
+
+<script src="assets/boot4/jquery.min.js"></script>
+<script src="assets/boot4/bootstrap.min.js"></script>
+<script src="assets/vuejs/vue.min.js"></script>
+
+<script>
+    //局部组件可以注册在其它组件内,用实例选项components注册
+    var Child = Vue.extend({
+        template: '<h1>自定义局部组件</h1>'
+    })
+
+    var Parent = Vue.extend({
+        template: '<div>111     <icomponent></icomponent> </div>',
+        components: {
+            // <my-component> ,只能用在父组件模板内
+            'icomponent': Child
+        }
+    })
+
+    //注册
+    Vue.component('pcomponent', Parent)
+
+    //创建实例
+    new Vue({
+        el: '#demo'
+    })
+
+</script>
+
+</body>
+</html>
