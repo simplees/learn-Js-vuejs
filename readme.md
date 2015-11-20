@@ -39,3 +39,5 @@ http://cdn.jsdelivr.net/vue/1.0.8/vue.min.js
   </body>
 </html>
 ```
+
+* 重点资料 ： https://github.com/vingojw/vue-vueRouter-webpack/blob/master/Vue教程.md

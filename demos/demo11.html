@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/boot4/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/css/base.css">
+</head>
+<body>
+
+    <div id="demo">
+        <button  v-on:click = "greet">Greet</button>
+
+    </div>
+
+<script src="assets/boot4/jquery.min.js"></script>
+<script src="assets/boot4/bootstrap.min.js"></script>
+<script src="assets/vuejs/vue.min.js"></script>
+
+var vm = new Vue({
+    el: '#demo',
+    data : {
+        name : 'vuejs'
+    },
+    methods : {
+        greet: function(event){
+            alert('Hello' + this.name + '!')
+
+            //event为原生DOM事件
+            alert(event.target.tagName)
+        }
+    }
+});
+
+vm.greet()
+
+</body>
+</html>
