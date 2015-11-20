@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/boot4/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/css/base.css">
+    <style>
+       ul{
+           padding-left:0;
+           font-family:Helvetica,Arial,sans-serif;
+       }
+       .staggered-transition {
+           transition:all .5s ease;
+           overflow:hidden;
+           margin:0;
+           height:20px;
+       }
+
+       .staggered-enter,.staggered-leave {
+           opacity: 0;
+           height: 0 ;
+       }
+    </style>
+</head>
+<body>
+
+<div id="demo">
+    <input v-model="query">
+    <ul>
+        <li v-for="item in list | filterBy query"
+            transition="staggered" stagger="100">
+            {{item.msg}}
+        </li>
+    </ul>
+</div>
+
+<script src="assets/boot4/jquery.min.js"></script>
+<script src="assets/boot4/bootstrap.min.js"></script>
+<script src="assets/vuejs/vue.min.js"></script>
+<script>
+    new Vue({
+        el: '#demo',
+        data: {
+            query: '',
+            list: [
+                {msg: 'Bruce Lee'},
+                {msg: 'asdlk'},
+                {msg: 'asDFAD'},
+                {msg: 'asDGA'},
+                {msg: 'FAKFLDKASJ'},
+            ]
+        }
+
+    });
+</script>
+</body>
+</html>
