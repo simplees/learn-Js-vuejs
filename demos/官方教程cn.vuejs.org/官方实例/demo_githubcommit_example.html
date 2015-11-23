@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/boot4/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/css/base.css">
+    <style>
+        #demo {
+            font-family: 'Helvetica', Arial, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: #f66;
+        }
+        li {
+            line-height: 1.5em;
+            margin-bottom: 20px;
+        }
+        .author, .date {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<!--这个例子通过 GitHub 的 API 获取 Vue.js 最近的提交记录，并展示为一个列表。你可以在 master 和 dev 分支之间切换。-->
+
+<div id="demo">
+    <h1>Latest Vue.js Commits</h1>
+    <template v-for="branch in branches">
+        <input typ="radio"
+               name="branch"
+               :id="branch"
+               :value="branch">
+        <label :for="branch">
+            {{branch}}
+        </label>
+    </template>
+
+    <p> vuejs/vue@{{currentBranch}}</p>
+
+    <ul>
+        <li v-for="record in commits">
+            <a :href="record.html_url" target="_blank" class="commit">
+                {{record.sha.slice(0,7)}}
+            </a>
+            -<span class="message">
+                {{record.commit.message | truncate}}
+            </span>
+            by <span class="author">
+                {{record.commit.author.name}}
+            </span>
+            at <span class="date">
+                {{record.commit.date | formateDate}}
+            </span>
+        </li>
+    </ul>
+
+</div>
+
+<script src="assets/boot4/jquery.min.js"></script>
+<script src="assets/boot4/bootstrap.min.js"></script>
+<script src="assets/vuejs/vue.min.js"></script>
+<script>
+    var apiURL = 'https://api.github.com/repos/vuejs/vue/commits?per_page=3&sha='
+
+    var demo = new Vue({
+        el: '#demo',
+        data:{
+            branches:['master','dev'],
+            currentBranch:'master',
+            commits:null
+        },
+        created:function(){
+            this.fetchData()
+        },
+        watch:{
+            currentBranch:'fetchData'
+        },
+        filters:{
+            truncate:function(v){
+                var newline = v.indexof('\n')
+                return newline > 0 ? v.slice(0,newline) : v
+            },
+            formateDate
+        }
+    })
+</script>
+</body>
+</html>

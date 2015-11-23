@@ -41,3 +41,7 @@ http://cdn.jsdelivr.net/vue/1.0.8/vue.min.js
 ```
 
 * 重点资料 ： https://github.com/vingojw/vue-vueRouter-webpack/blob/master/Vue教程.md
+
+* https://github.com/vingojw/learn-vue-router
+
+* https://shimo.im/doc/zPEx57T9DywEKaah

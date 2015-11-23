@@ -15,7 +15,7 @@
 * 指令 v-html
 > http://cn.vuejs.org/api/#v-html
 ```
-//在页面插入 v-html中内容
+//更新元素的 innerHTML，在页面插入 v-html中原内容
 <div v-html="html"></div>
 <!-- 相同 -->
 <div>{{{html}}}</div>

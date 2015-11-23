@@ -51,6 +51,7 @@
 <script src="assets/boot4/jquery.min.js"></script>
 <script src="assets/boot4/bootstrap.min.js"></script>
 <script src="assets/vuejs/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/marked/0.3.5/marked.min.js"></script>
 
 
 <script>
@@ -59,8 +60,8 @@
         data:{
             input:'* hello'
         },
-        filters:{ //过滤器预处理输入内容并显示
-            marked: marked
+        filters:{ //过滤器预处理显示的内容
+            marked: marked //用了插件marked
         }
     })
 </script>
