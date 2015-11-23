@@ -1,0 +1,2368 @@
+bplist00�_WebSubresources_WebMainResource��	
+_WebResourceData_WebResourceMIMEType^WebResourceURL_WebResourceResponseO��/*!
+Pure v0.3.0
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yui/pure/blob/master/LICENSE.md
+*/
+/*!
+normalize.css v1.1.2 | MIT License | git.io/normalize
+Copyright (c) Nicolas Gallagher and Jonathan Neal
+*/
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.pure-button {
+    /* Structure */
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.pure-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/*csslint unqualified-attributes:false, outline-none:false*/
+
+.pure-button {
+    font-size: 100%;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.5em 1.5em 0.5em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    *color: #444; /* IE 6 & 7 */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+    /* Transitions */
+    -webkit-transition: 0.1s linear -webkit-box-shadow;
+    -moz-transition: 0.1s linear -moz-box-shadow;
+    -ms-transition: 0.1s linear box-shadow;
+    -o-transition: 0.1s linear box-shadow;
+    transition: 0.1s linear box-shadow;
+}
+
+.pure-button-hover,
+.pure-button:hover,
+.pure-button:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+    background-image: -ms-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+.pure-button:focus {
+    outline: 0;
+}
+.pure-button-active,
+.pure-button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+
+.pure-button[disabled],
+.pure-button-disabled,
+.pure-button-disabled:hover,
+.pure-button-disabled:focus,
+.pure-button-disabled:active {
+    border: none;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: 0.40;
+    -moz-opacity: 0.40;
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.pure-button-hidden {
+    display: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.pure-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+.pure-button-primary,
+.pure-button-selected,
+a.pure-button-primary,
+a.pure-button-selected {
+    background-color: rgb(0, 120, 231);
+    color: #fff;
+}
+
+.pure-form input[type="text"],
+.pure-form input[type="password"],
+.pure-form input[type="email"],
+.pure-form input[type="url"],
+.pure-form input[type="date"],
+.pure-form input[type="month"],
+.pure-form input[type="time"],
+.pure-form input[type="datetime"],
+.pure-form input[type="datetime-local"],
+.pure-form input[type="week"],
+.pure-form input[type="number"],
+.pure-form input[type="search"],
+.pure-form input[type="tel"],
+.pure-form input[type="color"],
+.pure-form select,
+.pure-form textarea {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 0.8em;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-transition: 0.3s linear border;
+    -moz-transition: 0.3s linear border;
+    -ms-transition: 0.3s linear border;
+    -o-transition: 0.3s linear border;
+    transition: 0.3s linear border;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pure-form input[type="text"]:focus,
+.pure-form input[type="password"]:focus,
+.pure-form input[type="email"]:focus,
+.pure-form input[type="url"]:focus,
+.pure-form input[type="date"]:focus,
+.pure-form input[type="month"]:focus,
+.pure-form input[type="time"]:focus,
+.pure-form input[type="datetime"]:focus,
+.pure-form input[type="datetime-local"]:focus,
+.pure-form input[type="week"]:focus,
+.pure-form input[type="number"]:focus,
+.pure-form input[type="search"]:focus,
+.pure-form input[type="tel"]:focus,
+.pure-form input[type="color"]:focus,
+.pure-form select:focus,
+.pure-form textarea:focus {
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    border-color: #129FEA;
+}
+
+.pure-form input[type="file"]:focus,
+.pure-form input[type="radio"]:focus,
+.pure-form input[type="checkbox"]:focus {
+    outline: thin dotted #333;
+    outline: 1px auto #129FEA;
+}
+.pure-form .pure-checkbox,
+.pure-form .pure-radio {
+    margin: 0.5em 0;
+    display: block;
+}
+.pure-form input[type="text"][disabled],
+.pure-form input[type="password"][disabled],
+.pure-form input[type="email"][disabled],
+.pure-form input[type="url"][disabled],
+.pure-form input[type="date"][disabled],
+.pure-form input[type="month"][disabled],
+.pure-form input[type="time"][disabled],
+.pure-form input[type="datetime"][disabled],
+.pure-form input[type="datetime-local"][disabled],
+.pure-form input[type="week"][disabled],
+.pure-form input[type="number"][disabled],
+.pure-form input[type="search"][disabled],
+.pure-form input[type="tel"][disabled],
+.pure-form input[type="color"][disabled],
+.pure-form select[disabled],
+.pure-form textarea[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3;
+}
+.pure-form input[readonly],
+.pure-form select[readonly],
+.pure-form textarea[readonly] {
+    background: #eee; /* menu hover bg color */
+    color: #777; /* menu text color */
+    border-color: #ccc;
+}
+
+.pure-form input:focus:invalid,
+.pure-form textarea:focus:invalid,
+.pure-form select:focus:invalid {
+    color: #b94a48;
+    border: 1px solid #ee5f5b;
+}
+.pure-form input:focus:invalid:focus,
+.pure-form textarea:focus:invalid:focus,
+.pure-form select:focus:invalid:focus {
+    border-color: #e9322d;
+}
+.pure-form input[type="file"]:focus:invalid:focus,
+.pure-form input[type="radio"]:focus:invalid:focus,
+.pure-form input[type="checkbox"]:focus:invalid:focus {
+    outline-color: #e9322d;
+}
+.pure-form select {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.pure-form select[multiple] {
+    height: auto;
+}
+.pure-form label {
+    margin: 0.5em 0 0.2em;
+    font-size: 90%;
+}
+.pure-form fieldset {
+    margin: 0;
+    padding: 0.35em 0 0.75em;
+    border: 0;
+}
+.pure-form legend {
+    display: block;
+    width: 100%;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+    font-size: 125%;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.pure-form-stacked input[type="text"],
+.pure-form-stacked input[type="password"],
+.pure-form-stacked input[type="email"],
+.pure-form-stacked input[type="url"],
+.pure-form-stacked input[type="date"],
+.pure-form-stacked input[type="month"],
+.pure-form-stacked input[type="time"],
+.pure-form-stacked input[type="datetime"],
+.pure-form-stacked input[type="datetime-local"],
+.pure-form-stacked input[type="week"],
+.pure-form-stacked input[type="number"],
+.pure-form-stacked input[type="search"],
+.pure-form-stacked input[type="tel"],
+.pure-form-stacked input[type="color"],
+.pure-form-stacked select,
+.pure-form-stacked label,
+.pure-form-stacked textarea {
+    display: block;
+    margin: 0.25em 0;
+}
+
+.pure-form-aligned input,
+.pure-form-aligned textarea,
+.pure-form-aligned select,
+/* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
+.pure-form-aligned .pure-help-inline,
+.pure-form-message-inline {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+/* Aligned Forms */
+.pure-form-aligned .pure-control-group {
+    margin-bottom: 0.5em;
+}
+.pure-form-aligned .pure-control-group label {
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10em;
+    margin: 0 1em 0 0;
+}
+.pure-form-aligned .pure-controls {
+    margin: 1.5em 0 0 10em;
+}
+
+/* Rounded Inputs */
+.pure-form input.pure-input-rounded,
+.pure-form .pure-input-rounded {
+    border-radius: 2em;
+    padding: 0.5em 1em;
+}
+
+/* Grouped Inputs */
+.pure-form .pure-group fieldset {
+    margin-bottom: 10px;
+}
+.pure-form .pure-group input {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    position: relative;
+    top: -1px;
+}
+.pure-form .pure-group input:focus {
+    z-index: 2;
+}
+.pure-form .pure-group input:first-child {
+    top: 1px;
+    border-radius: 4px 4px 0 0;
+}
+.pure-form .pure-group input:last-child {
+    top: -2px;
+    border-radius: 0 0 4px 4px;
+}
+.pure-form .pure-group button {
+    margin: 0.35em 0;
+}
+
+.pure-form .pure-input-1 {
+    width: 100%;
+}
+.pure-form .pure-input-2-3 {
+    width: 66%;
+}
+.pure-form .pure-input-1-2 {
+    width: 50%;
+}
+.pure-form .pure-input-1-3 {
+    width: 33%;
+}
+.pure-form .pure-input-1-4 {
+    width: 25%;
+}
+
+/* Inline help for forms */
+/* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
+.pure-form .pure-help-inline,
+.pure-form-message-inline {
+    display: inline-block;
+    padding-left: 0.3em;
+    color: #666;
+    vertical-align: middle;
+    font-size: 90%;
+}
+
+/* Block help for forms */
+.pure-form-message {
+    display: block;
+    color: #666;
+    font-size: 90%;
+}
+
+@media only screen and (max-width : 480px) {
+    .pure-form button[type="submit"] {
+        margin: 0.7em 0 0;
+    }
+
+    .pure-form input[type="text"],
+    .pure-form input[type="password"],
+    .pure-form input[type="email"],
+    .pure-form input[type="url"],
+    .pure-form input[type="date"],
+    .pure-form input[type="month"],
+    .pure-form input[type="time"],
+    .pure-form input[type="datetime"],
+    .pure-form input[type="datetime-local"],
+    .pure-form input[type="week"],
+    .pure-form input[type="number"],
+    .pure-form input[type="search"],
+    .pure-form input[type="tel"],
+    .pure-form input[type="color"],
+    .pure-form label {
+        margin-bottom: 0.3em;
+        display: block;
+    }
+
+    .pure-group input[type="text"],
+    .pure-group input[type="password"],
+    .pure-group input[type="email"],
+    .pure-group input[type="url"],
+    .pure-group input[type="date"],
+    .pure-group input[type="month"],
+    .pure-group input[type="time"],
+    .pure-group input[type="datetime"],
+    .pure-group input[type="datetime-local"],
+    .pure-group input[type="week"],
+    .pure-group input[type="number"],
+    .pure-group input[type="search"],
+    .pure-group input[type="tel"],
+    .pure-group input[type="color"] {
+        margin-bottom: 0;
+    }
+
+    .pure-form-aligned .pure-control-group label {
+        margin-bottom: 0.3em;
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+
+    .pure-form-aligned .pure-controls {
+        margin: 1.5em 0 0 0;
+    }
+
+    /* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
+    .pure-form .pure-help-inline,
+    .pure-form-message-inline,
+    .pure-form-message {
+        display: block;
+        font-size: 80%;
+        /* Increased bottom padding to make it group with its related input element. */
+        padding: 0.2em 0 0.8em;
+    }
+}
+
+/*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
+
+.pure-g {
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+
+    /*
+    Sets the font stack to fonts known to work properly with the above letter
+    and word spacings. See: https://github.com/yui/pure/issues/41/
+
+    The following font stack makes Pure Grids work on all known environments.
+
+    * FreeSans: Ships with many Linux distros, including Ubuntu
+
+    * Arimo: Ships with Chrome OS. Arimo has to be defined before Helvetica and
+      Arial to get picked up by the browser, even though neither is available
+      in Chrome OS.
+
+    * Droid Sans: Ships with all versions of Android.
+
+    * Helvetica, Arial, sans-serif: Common font stack on OS X and Windows.
+    */
+    font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+
+    /*
+    Use flexbox when possible to avoid `letter-spacing` side-effects.
+
+    NOTE: Firefox (as of 25) does not currently support flex-wrap, so the
+    `-moz-` prefix version is omitted.
+    */
+
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+
+    /* IE10 uses display: flexbox */
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.pure-g {
+    word-spacing: -0.43em;
+}
+
+.pure-u {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+/*
+Resets the font family back to the OS/browser's default sans-serif font,
+this the same font stack that Normalize.css sets for the `body`.
+*/
+.pure-g [class *= "pure-u"] {
+    font-family: sans-serif;
+}
+
+.pure-u-1,
+.pure-u-1-2,
+.pure-u-1-3,
+.pure-u-2-3,
+.pure-u-1-4,
+.pure-u-3-4,
+.pure-u-1-5,
+.pure-u-2-5,
+.pure-u-3-5,
+.pure-u-4-5,
+.pure-u-1-6,
+.pure-u-5-6,
+.pure-u-1-8,
+.pure-u-3-8,
+.pure-u-5-8,
+.pure-u-7-8,
+.pure-u-1-12,
+.pure-u-5-12,
+.pure-u-7-12,
+.pure-u-11-12,
+.pure-u-1-24,
+.pure-u-5-24,
+.pure-u-7-24,
+.pure-u-11-24,
+.pure-u-13-24,
+.pure-u-17-24,
+.pure-u-19-24,
+.pure-u-23-24 {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.pure-u-1 {
+    width: 100%;
+}
+
+.pure-u-1-2 {
+    width: 50%;
+    *width: 49.969%;
+}
+
+.pure-u-1-3 {
+    width: 33.3333%;
+    *width: 33.3023%;
+}
+
+.pure-u-2-3 {
+    width: 66.6667%;
+    *width: 66.6357%;
+}
+
+.pure-u-1-4 {
+    width: 25%;
+    *width: 24.969%;
+}
+
+.pure-u-3-4 {
+    width: 75%;
+    *width: 74.969%;
+}
+
+.pure-u-1-5 {
+    width: 20%;
+    *width: 19.969%;
+}
+
+.pure-u-2-5 {
+    width: 40%;
+    *width: 39.969%;
+}
+
+.pure-u-3-5 {
+    width: 60%;
+    *width: 59.969%;
+}
+
+.pure-u-4-5 {
+    width: 80%;
+    *width: 79.969%;
+}
+
+.pure-u-1-6 {
+    width: 16.6667%;
+    *width: 16.6357%;
+}
+
+.pure-u-5-6 {
+    width: 83.3333%;
+    *width: 83.3023%;
+}
+
+.pure-u-1-8 {
+    width: 12.5%;
+    *width: 12.469%;
+}
+
+.pure-u-3-8 {
+    width: 37.5%;
+    *width: 37.469%;
+}
+
+.pure-u-5-8 {
+    width: 62.5%;
+    *width: 62.469%;
+}
+
+.pure-u-7-8 {
+    width: 87.5%;
+    *width: 87.469%;
+}
+
+.pure-u-1-12 {
+    width: 8.3333%;
+    *width: 8.3023%;
+}
+
+.pure-u-5-12 {
+    width: 41.6667%;
+    *width: 41.6357%;
+}
+
+.pure-u-7-12 {
+    width: 58.3333%;
+    *width: 58.3023%;
+}
+
+.pure-u-11-12 {
+    width: 91.6667%;
+    *width: 91.6357%;
+}
+
+.pure-u-1-24 {
+    width: 4.1667%;
+    *width: 4.1357%;
+}
+
+.pure-u-5-24 {
+    width: 20.8333%;
+    *width: 20.8023%;
+}
+
+.pure-u-7-24 {
+    width: 29.1667%;
+    *width: 29.1357%;
+}
+
+.pure-u-11-24 {
+    width: 45.8333%;
+    *width: 45.8023%;
+}
+
+.pure-u-13-24 {
+    width: 54.1667%;
+    *width: 54.1357%;
+}
+
+.pure-u-17-24 {
+    width: 70.8333%;
+    *width: 70.8023%;
+}
+
+.pure-u-19-24 {
+    width: 79.1667%;
+    *width: 79.1357%;
+}
+
+.pure-u-23-24 {
+    width: 95.8333%;
+    *width: 95.8023%;
+}
+
+/*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
+
+.pure-g-r {
+    letter-spacing: -0.31em;
+    *letter-spacing: normal;
+    *word-spacing: -0.43em;
+
+    /*
+    Sets the font stack to fonts known to work properly with the above letter
+    and word spacings. See: https://github.com/yui/pure/issues/41/
+
+    The following font stack makes Pure Grids work on all known environments.
+
+    * FreeSans: Ships with many Linux distros, including Ubuntu
+
+    * Arimo: Ships with Chrome OS. Arimo has to be defined before Helvetica and
+      Arial to get picked up by the browser, even though neither is available
+      in Chrome OS.
+
+    * Droid Sans: Ships with all versions of Android.
+
+    * Helvetica, Arial, sans-serif: Common font stack on OS X and Windows.
+    */
+    font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+
+    /*
+    Use flexbox when possible to avoid `letter-spacing` side-effects.
+
+    NOTE: Firefox (as of 25) does not currently support flex-wrap, so the
+    `-moz-` prefix version is omitted.
+    */
+
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+
+    /* IE10 uses display: flexbox */
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.pure-g-r {
+    word-spacing: -0.43em;
+}
+
+/*
+Resets the font family back to the OS/browser's default sans-serif font,
+this the same font stack that Normalize.css sets for the `body`.
+*/
+.pure-g-r [class *= "pure-u"] {
+    font-family: sans-serif;
+}
+
+.pure-g-r img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 980px) {
+    .pure-visible-phone {
+        display: none;
+    }
+    .pure-visible-tablet {
+        display: none;
+    }
+    .pure-hidden-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .pure-g-r > .pure-u,
+    .pure-g-r > [class *= "pure-u-"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .pure-g-r > .pure-u,
+    .pure-g-r > [class *= "pure-u-"] {
+        width: 100%;
+    }
+    .pure-hidden-phone {
+        display: none;
+    }
+    .pure-visible-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .pure-hidden-tablet {
+        display: none;
+    }
+    .pure-visible-desktop {
+        display: none;
+    }
+}
+
+/*csslint adjoining-classes:false, outline-none:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+.pure-menu ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.pure-menu.pure-menu-open {
+    visibility: visible;
+    z-index: 2;
+    width: 100%;
+}
+
+.pure-menu ul {
+    left: -10000px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: -10000px;
+    z-index: 1;
+}
+
+.pure-menu > ul { position: relative; }
+
+.pure-menu-open > ul {
+    left: 0;
+    top: 0;
+    visibility: visible;
+}
+
+.pure-menu-open > ul:focus {
+    outline: 0;
+}
+
+.pure-menu li { position: relative; }
+
+.pure-menu a,
+.pure-menu .pure-menu-heading {
+    display: block;
+    color: inherit;
+    line-height: 1.5em;
+    padding: 5px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.pure-menu.pure-menu-horizontal > .pure-menu-heading {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin: 0;
+    vertical-align: middle;
+}
+.pure-menu.pure-menu-horizontal > ul {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+    height: 2.4em;
+}
+
+.pure-menu li a { padding: 5px 20px; }
+
+.pure-menu-can-have-children > .pure-menu-label:after {
+    content: '\25B8';
+    float: right;
+    /* These specific fonts have the Unicode char we need. */
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+    margin-right: -20px;
+    margin-top: -1px;
+}
+
+.pure-menu-can-have-children > .pure-menu-label {
+    padding-right: 30px;
+}
+
+.pure-menu-separator {
+    background-color: #dfdfdf;
+    display: block;
+    height: 1px;
+    font-size: 0;
+    margin: 7px 2px;
+    overflow: hidden;
+}
+
+.pure-menu-hidden {
+    display: none;
+}
+
+/* FIXED MENU */
+.pure-menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* HORIZONTAL MENU CODE */
+
+/* Initial menus should be inline-block so that they are horizontal */
+.pure-menu-horizontal li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+/* Submenus should still be display: block; */
+.pure-menu-horizontal li li {
+    display: block;
+}
+
+/* Content after should be down arrow */
+.pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label:after {
+    content: "\25BE";
+}
+/*Add extra padding to elements that have the arrow so that the hover looks nice */
+.pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label {
+    padding-right: 30px;
+}
+
+/* Adjusting separator for vertical menus */
+.pure-menu-horizontal li.pure-menu-separator {
+	height: 50%;
+	width: 1px;
+	margin: 0 7px;
+}
+
+/* Submenus should be horizontal separator again */
+.pure-menu-horizontal li li.pure-menu-separator {
+	height: 1px;
+	width: auto;
+	margin: 7px 2px;
+}
+
+
+/*csslint adjoining-classes:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+/* MAIN MENU STYLING */
+
+.pure-menu.pure-menu-open,
+.pure-menu.pure-menu-horizontal li .pure-menu-children {
+    background: #fff; /* Old browsers */
+    border: 1px solid #b7b7b7;
+}
+
+/* remove borders for horizontal menus */
+.pure-menu.pure-menu-horizontal,
+.pure-menu.pure-menu-horizontal .pure-menu-heading {
+    border: none;
+}
+
+
+/* LINK STYLES */
+
+.pure-menu a {
+    border: 1px solid transparent;
+    border-left: none;
+    border-right: none;
+
+}
+
+.pure-menu a,
+.pure-menu .pure-menu-can-have-children > li:after {
+    color: #777;
+}
+
+.pure-menu .pure-menu-can-have-children > li:hover:after {
+    color: #fff;
+}
+
+/* Focus style for a dropdown menu-item when the parent has been opened */
+.pure-menu .pure-menu-open {
+    background: #dedede;
+}
+
+
+.pure-menu li a:hover,
+.pure-menu li a:focus {
+    background: #eee;
+}
+
+/* DISABLED STATES */
+.pure-menu li.pure-menu-disabled a:hover,
+.pure-menu li.pure-menu-disabled a:focus {
+    background: #fff;
+    color: #bfbfbf;
+}
+
+.pure-menu .pure-menu-disabled > a {
+    background-image: none;
+    border-color: transparent;
+    cursor: default;
+}
+
+.pure-menu .pure-menu-disabled > a,
+.pure-menu .pure-menu-can-have-children.pure-menu-disabled > a:after {
+    color: #bfbfbf;
+}
+
+/* HEADINGS */
+.pure-menu .pure-menu-heading {
+    color: #565d64;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin-top: 0.5em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #dfdfdf;
+}
+
+/* ACTIVE MENU ITEM */
+.pure-menu .pure-menu-selected a {
+    color: #000;
+}
+
+/* FIXED MENU */
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    border: none;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+/*csslint box-model:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+
+
+.pure-paginator {
+
+    /* `pure-g` Grid styles */
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+
+    /* `pure-paginator` Specific styles */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.opera-only :-o-prefocus,
+.pure-paginator {
+    word-spacing: -0.43em;
+}
+
+/* `pure-u` Grid styles */
+.pure-paginator li {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+
+.pure-paginator .pure-button {
+    border-radius: 0;
+    padding: 0.8em 1.4em;
+    vertical-align: top;
+    height: 1.1em;
+}
+.pure-paginator .pure-button:focus,
+.pure-paginator .pure-button:active {
+    outline-style: none;
+}
+.pure-paginator .prev,
+.pure-paginator .next {
+    color: #C0C1C3;
+    text-shadow: 0 -1px 0 rgba(0,0,0, 0.45);
+}
+.pure-paginator .prev {
+    border-radius: 2px 0 0 2px;
+}
+.pure-paginator .next {
+    border-radius: 0 2px 2px 0;
+}
+
+@media (max-width: 480px) {
+    .pure-menu-horizontal {
+        width: 100%;
+    }
+
+    .pure-menu-children li {
+        display: block;
+        border-bottom: 1px solid black;
+    }
+}
+
+.pure-table {
+    /* Remove spacing between table cells (from Normalize.css) */
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+
+.pure-table caption {
+    color: #000;
+    font: italic 85%/1 arial, sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.pure-table td,
+.pure-table th {
+    border-left: 1px solid #cbcbcb;/*  inner column border */
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible; /*to make ths where the title is really long work*/
+    padding: 6px 12px; /* cell padding */
+}
+.pure-table td:first-child,
+.pure-table th:first-child {
+    border-left-width: 0;
+}
+
+.pure-table thead {
+    background: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+.pure-table td {
+    background-color: transparent;
+}
+.pure-table-odd td {
+    background-color: #f2f2f2;
+}
+
+/* nth-child selector for modern browsers */
+.pure-table-striped tr:nth-child(2n-1) td {
+    background-color: #f2f2f2;
+}
+
+/* BORDERED TABLES */
+.pure-table-bordered td {
+    border-bottom: 1px solid #cbcbcb;
+}
+.pure-table-bordered tbody > tr:last-child td,
+.pure-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+
+/* HORIZONTAL BORDERED TABLES */
+
+.pure-table-horizontal td,
+.pure-table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+.pure-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+Xtext/css_/http://jiongks.name/usr/themes/iamflat/pure.cssO�bplist00�abX$versionX$objectsY$archiverT$top ���#)*0123IJKLMNOPQRSTUVWXY\U$null�	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1�	��� �����$%'(WNS.base[NS.relative� ��_/http://jiongks.name/usr/themes/iamflat/pure.css�+,-.Z$classnameX$classesUNSURL�-/XNSObject#A��1�eg ��456?HWNS.keysZNS.objects�789:;<=>�	�
+�������@BCDEFG���������VServer\Content-Type]Last-ModifiedSViaTDate]Accept-Ranges^Content-LengthZConnection[nginx/1.2.6Xtext/css_Sat, 14 Dec 2013 21:18:54 GMTV(null)_Sun, 22 Nov 2015 10:26:16 GMTUbytesU35576Zkeep-alive�+,Z[\NSDictionary�Z/�+,]^_NSHTTPURLResponse�_`/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver�cd_WebResourceResponse�    # - 2 7 U [ v y } � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �(.1:CEGNVajlnprtvxz��������������������$DJP[`mpu�������             e              ��
+Od@charset "UTF-8";
+html, table,
+.pure-g [class*="pure-u"],
+.pure-g-r [class*="pure-u"] {
+  font-family: "Lucida Grande", "Microsoft JhengHei", "Microsoft YaHei"; }
+
+code, pre {
+  font-family: Monaco, Consolas, "Courier New";
+  font-size: 85%; }
+
+body::after {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  content: '{"theme":"我被拍平了","designer":"@勾三股四"}';
+  font-family: Monaco, Consolas, "Courier New";
+  font-size: 80%;
+  padding: 0.75em;
+  box-sizing: border-box;
+  color: white;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 0.5em; }
+
+body {
+  line-height: 1.5;
+  word-break: break-all; }
+
+a {
+  text-decoration: none;
+  border-bottom: 1px black dashed; }
+
+#header {
+  padding: 1em;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  background: #09c;
+  color: white; }
+  #header h1 .first-letter {
+    display: inline-block;
+    -webkit-transform: translate(-80%, 0) scale(3) rotate(-15deg);
+    -moz-transform: translate(-80%, 0) scale(3) rotate(-15deg);
+    -ms-transform: translate(-80%, 0) scale(3) rotate(-15deg);
+    transform: translate(-80%, 0) scale(3) rotate(-15deg);
+    -webkit-transition: all 0.05s;
+    -moz-transition: all 0.05s;
+    -ms-transition: all 0.05s;
+    transition: all 0.05s; }
+  #header:hover h1 .first-letter {
+    -webkit-transform: translate(-80%, -10px) scale(3) rotate(15deg);
+    -moz-transform: translate(-80%, -10px) scale(3) rotate(15deg);
+    -ms-transform: translate(-80%, -10px) scale(3) rotate(15deg);
+    transform: translate(-80%, -10px) scale(3) rotate(15deg); }
+  #header a {
+    color: white;
+    border-bottom-color: white; }
+
+#nav {
+  text-align: center;
+  padding: 0.5em 0; }
+  #nav ul {
+    height: auto;
+    display: block; }
+
+#main {
+  margin: 0 auto;
+  max-width: 40em;
+  padding: 0 1em;
+  box-sizing: border-box; }
+  #main .content {
+    color: #333; }
+    #main .content h3, #main .content h4, #main .content h5, #main .content h6 {
+      color: #363; }
+    #main .content img {
+      padding: 1px;
+      background: white;
+      border: 1px #999 solid;
+      max-width: 100%;
+      box-sizing: border-box; }
+    #main .content h2 {
+      text-align: center;
+      padding: 0.5em 1em;
+      background: #6c6;
+      color: white; }
+      #main .content h2 a {
+        color: white;
+        border-bottom-color: white; }
+    #main .content:first-child h2:first-child {
+      margin-top: 0; }
+
+#footer {
+  text-align: center;
+  background: #f60;
+  padding: 1em;
+  color: white;
+  padding-bottom: 4em; }
+  #footer a {
+    color: white;
+    border-bottom-color: white; }
+
+@media all and (min-width: 1600px) {
+  body {
+    font-size: 150%; } }
+@media all and (min-width: 1000px) and (max-width: 1600px) {
+  body {
+    font-size: 125%; } }
+@media all and (min-width: 400px) and (max-width: 1000px) {
+  body {
+    font-size: 100%; } }
+@media all and (max-width: 400px) {
+  body {
+    font-size: 80%; }
+
+  body::after {
+    position: static;
+    color: #666;
+    background: transparent;
+    text-align: center;
+    display: block;
+    margin: 0;
+    font-size: 75%; }
+
+  #footer {
+    padding-bottom: 1em; } }
+.page-navigator {
+  list-style: none;
+  padding: 0;
+  font-size: 85%; }
+  .page-navigator li {
+    display: inline-block;
+    margin-right: 5px; }
+  .page-navigator a {
+    padding-left: 0.75em;
+    padding-right: 0.75em; }
+
+#comments > .comment-list {
+  padding-left: 40px; }
+
+.comment-list {
+  list-style: none;
+  margin: 40px 0;
+  padding: 0; }
+
+.comment-body {
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 5px;
+  padding-left: 40px; }
+  .comment-body > p {
+    clear: both; }
+
+.comment-author {
+  float: left;
+  position: relative;
+  padding-bottom: 10px; }
+  .comment-author cite {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px; }
+  .comment-author img {
+    position: absolute;
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 1px 1px 3px 2px #999;
+    left: -76px;
+    top: -8px; }
+
+.comment-meta {
+  float: right;
+  font-size: 16px; }
+
+blockquote {
+  font-family: "Georgia", serif;
+  color: #666;
+  font-style: italic;
+  line-height: 1.8em;
+  border-left: 5px solid #ddd;
+  padding-left: 1.5em; }
+
+pre, code {
+  color: #333;
+  background: #fafafa;
+  border-radius: 5px; }
+
+pre {
+  padding: 0.5em 1em; }
+  pre code {
+    font-size: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+
+/*# sourceMappingURL=style.css.map */
+_0http://jiongks.name/usr/themes/iamflat/style.cssO�bplist00�abX$versionX$objectsY$archiverT$top ���#)*0123IJKLMNOPQRSTUVWXY\U$null�	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1�	��� �����$%'(WNS.base[NS.relative� ��_0http://jiongks.name/usr/themes/iamflat/style.css�+,-.Z$classnameX$classesUNSURL�-/XNSObject#A��1�z� ��456?HWNS.keysZNS.objects�789:;<=>�	�
+�������@BCDEFG���������VServer\Content-Type]Last-ModifiedSViaTDate]Accept-Ranges^Content-LengthZConnection[nginx/1.2.6Xtext/css_Wed, 15 Oct 2014 09:46:59 GMTV(null)_Sun, 22 Nov 2015 10:26:16 GMTUbytesT4452Zkeep-alive�+,Z[\NSDictionary�Z/�+,]^_NSHTTPURLResponse�_`/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver�cd_WebResourceResponse�    # - 2 7 U [ v y } � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � )/2;DFHOWbkmoqsuwy{��������������������%EKP[`mpu�������             e              ��O[P(function(){var h={},mt={},c={id:"a0a2372d4b7621d0bfe71f33c58a4bd8",dm:["jiongks.name"],js:"tongji.baidu.com/hm-web/js/",etrk:[],icon:'/hmt/icon/21|gif|20|20',ctrk:false,align:-1,nv:-1,vdur:1800000,age:31536000000,rec:0,rp:[],trust:0,vcard:0,qiao:0,lxb:0,conv:0,comm:0,apps:''};var r=!0,s=null,t=!1;mt.i={};mt.i.S=/msie (\d+\.\d+)/i.test(navigator.userAgent);mt.i.va=/msie (\d+\.\d+)/i.test(navigator.userAgent)?document.documentMode||+RegExp.$1:void 0;mt.i.cookieEnabled=navigator.cookieEnabled;mt.i.javaEnabled=navigator.javaEnabled();mt.i.language=navigator.language||navigator.browserLanguage||navigator.systemLanguage||navigator.userLanguage||"";mt.i.Ba=(window.screen.width||0)+"x"+(window.screen.height||0);mt.i.colorDepth=window.screen.colorDepth||0;mt.cookie={};
+mt.cookie.set=function(a,d,e){var b;e.H&&(b=new Date,b.setTime(b.getTime()+e.H));document.cookie=a+"="+d+(e.domain?"; domain="+e.domain:"")+(e.path?"; path="+e.path:"")+(b?"; expires="+b.toGMTString():"")+(e.Wa?"; secure":"")};mt.cookie.get=function(a){return(a=RegExp("(^| )"+a+"=([^;]*)(;|$)").exec(document.cookie))?a[2]:s};mt.s={};mt.s.Pa=function(a){return document.getElementById(a)};mt.s.Qa=function(a,d){for(d=d.toUpperCase();(a=a.parentNode)&&1==a.nodeType;)if(a.tagName==d)return a;return s};
+(mt.s.za=function(){function a(){if(!a.B){a.B=r;for(var d=0,g=b.length;d<g;d++)b[d]()}}function d(){try{document.documentElement.doScroll("left")}catch(b){setTimeout(d,1);return}a()}var e=t,b=[],g;document.addEventListener?g=function(){document.removeEventListener("DOMContentLoaded",g,t);a()}:document.attachEvent&&(g=function(){"complete"===document.readyState&&(document.detachEvent("onreadystatechange",g),a())});(function(){if(!e)if(e=r,"complete"===document.readyState)a.B=r;else if(document.addEventListener)document.addEventListener("DOMContentLoaded",
+g,t),window.addEventListener("load",a,t);else if(document.attachEvent){document.attachEvent("onreadystatechange",g);window.attachEvent("onload",a);var b=t;try{b=window.frameElement==s}catch(n){}document.documentElement.doScroll&&b&&d()}})();return function(d){a.B?d():b.push(d)}}()).B=t;mt.event={};mt.event.c=function(a,d,e){a.attachEvent?a.attachEvent("on"+d,function(b){e.call(a,b)}):a.addEventListener&&a.addEventListener(d,e,t)};
+mt.event.preventDefault=function(a){a.preventDefault?a.preventDefault():a.returnValue=t};mt.m={};mt.m.parse=function(){return(new Function('return (" + source + ")'))()};
+mt.m.stringify=function(){function a(a){/["\\\x00-\x1f]/.test(a)&&(a=a.replace(/["\\\x00-\x1f]/g,function(a){var b=e[a];if(b)return b;b=a.charCodeAt();return"\\u00"+Math.floor(b/16).toString(16)+(b%16).toString(16)}));return'"'+a+'"'}function d(a){return 10>a?"0"+a:a}var e={"\b":"\\b","\t":"\\t","\n":"\\n","\f":"\\f","\r":"\\r",'"':'\\"',"\\":"\\\\"};return function(b){switch(typeof b){case "undefined":return"undefined";case "number":return isFinite(b)?String(b):"null";case "string":return a(b);case "boolean":return String(b);
+default:if(b===s)return"null";if(b instanceof Array){var g=["["],e=b.length,n,f,k;for(f=0;f<e;f++)switch(k=b[f],typeof k){case "undefined":case "function":case "unknown":break;default:n&&g.push(","),g.push(mt.m.stringify(k)),n=1}g.push("]");return g.join("")}if(b instanceof Date)return'"'+b.getFullYear()+"-"+d(b.getMonth()+1)+"-"+d(b.getDate())+"T"+d(b.getHours())+":"+d(b.getMinutes())+":"+d(b.getSeconds())+'"';n=["{"];f=mt.m.stringify;for(e in b)if(Object.prototype.hasOwnProperty.call(b,e))switch(k=
+b[e],typeof k){case "undefined":case "unknown":case "function":break;default:g&&n.push(","),g=1,n.push(f(e)+":"+f(k))}n.push("}");return n.join("")}}}();mt.lang={};mt.lang.e=function(a,d){return"[object "+d+"]"==={}.toString.call(a)};mt.lang.Ta=function(a){return mt.lang.e(a,"Number")&&isFinite(a)};mt.lang.Va=function(a){return mt.lang.e(a,"String")};mt.localStorage={};
+mt.localStorage.F=function(){if(!mt.localStorage.g)try{mt.localStorage.g=document.createElement("input"),mt.localStorage.g.type="hidden",mt.localStorage.g.style.display="none",mt.localStorage.g.addBehavior("#default#userData"),document.getElementsByTagName("head")[0].appendChild(mt.localStorage.g)}catch(a){return t}return r};
+mt.localStorage.set=function(a,d,e){var b=new Date;b.setTime(b.getTime()+e||31536E6);try{window.localStorage?(d=b.getTime()+"|"+d,window.localStorage.setItem(a,d)):mt.localStorage.F()&&(mt.localStorage.g.expires=b.toUTCString(),mt.localStorage.g.load(document.location.hostname),mt.localStorage.g.setAttribute(a,d),mt.localStorage.g.save(document.location.hostname))}catch(g){}};
+mt.localStorage.get=function(a){if(window.localStorage){if(a=window.localStorage.getItem(a)){var d=a.indexOf("|"),e=a.substring(0,d)-0;if(e&&e>(new Date).getTime())return a.substring(d+1)}}else if(mt.localStorage.F())try{return mt.localStorage.g.load(document.location.hostname),mt.localStorage.g.getAttribute(a)}catch(b){}return s};
+mt.localStorage.remove=function(a){if(window.localStorage)window.localStorage.removeItem(a);else if(mt.localStorage.F())try{mt.localStorage.g.load(document.location.hostname),mt.localStorage.g.removeAttribute(a),mt.localStorage.g.save(document.location.hostname)}catch(d){}};mt.sessionStorage={};mt.sessionStorage.set=function(a,d){if(window.sessionStorage)try{window.sessionStorage.setItem(a,d)}catch(e){}};
+mt.sessionStorage.get=function(a){return window.sessionStorage?window.sessionStorage.getItem(a):s};mt.sessionStorage.remove=function(a){window.sessionStorage&&window.sessionStorage.removeItem(a)};mt.O={};mt.O.log=function(a,d){var e=new Image,b="mini_tangram_log_"+Math.floor(2147483648*Math.random()).toString(36);window[b]=e;e.onload=e.onerror=e.onabort=function(){e.onload=e.onerror=e.onabort=s;e=window[b]=s;d&&d(a)};e.src=a};mt.D={};
+mt.D.na=function(){var a="";if(navigator.plugins&&navigator.mimeTypes.length){var d=navigator.plugins["Shockwave Flash"];d&&d.description&&(a=d.description.replace(/^.*\s+(\S+)\s+\S+$/,"$1"))}else if(window.ActiveXObject)try{if(d=new ActiveXObject("ShockwaveFlash.ShockwaveFlash"))(a=d.GetVariable("$version"))&&(a=a.replace(/^.*\s+(\d+),(\d+).*$/,"$1.$2"))}catch(e){}return a};
+mt.D.ba=function(a,d,e,b,g){return'<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="'+a+'" width="'+e+'" height="'+b+'"><param name="movie" value="'+d+'" /><param name="flashvars" value="'+(g||"")+'" /><param name="allowscriptaccess" value="always" /><embed type="application/x-shockwave-flash" name="'+a+'" width="'+e+'" height="'+b+'" src="'+d+'" flashvars="'+(g||"")+'" allowscriptaccess="always" /></object>'};mt.url={};
+mt.url.k=function(a,d){var e=a.match(RegExp("(^|&|\\?|#)("+d+")=([^&#]*)(&|$|#)",""));return e?e[3]:s};mt.url.Sa=function(a){return(a=a.match(/^(https?:)\/\//))?a[1]:s};mt.url.ia=function(a){return(a=a.match(/^(https?:\/\/)?([^\/\?#]*)/))?a[2].replace(/.*@/,""):s};mt.url.Q=function(a){return(a=mt.url.ia(a))?a.replace(/:\d+$/,""):a};mt.url.Ra=function(a){return(a=a.match(/^(https?:\/\/)?[^\/]*(.*)/))?a[2].replace(/[\?#].*/,"").replace(/^$/,"/"):s};
+h.q={ua:"http://tongji.baidu.com/hm-web/welcome/ico",W:"hm.baidu.com/hm.gif",Z:"baidu.com",ra:"hmmd",sa:"hmpl",qa:"hmkw",oa:"hmci",ta:"hmsr",pa:"hmcu",p:0,l:Math.round(+new Date/1E3),protocol:"https:"===document.location.protocol?"https:":"http:",Ua:0,La:6E5,Ma:10,Na:1024,Ka:1,L:2147483647,X:"cc cf ci ck cl cm cp cu cw ds ep et fl ja ln lo lt nv rnd si st su v cv lv api tt u".split(" ")};
+(function(){var a={o:{},c:function(a,e){this.o[a]=this.o[a]||[];this.o[a].push(e)},w:function(a,e){this.o[a]=this.o[a]||[];for(var b=this.o[a].length,g=0;g<b;g++)this.o[a][g](e)}};return h.z=a})();
+(function(){function a(a,b){var g=document.createElement("script");g.charset="utf-8";d.e(b,"Function")&&(g.readyState?g.onreadystatechange=function(){if("loaded"===g.readyState||"complete"===g.readyState)g.onreadystatechange=s,b()}:g.onload=function(){b()});g.src=a;var m=document.getElementsByTagName("script")[0];m.parentNode.insertBefore(g,m)}var d=mt.lang;return h.load=a})();
+(function(){var a=h.q,d=mt.D,e={init:function(){if(""!==c.icon){var b;b=c.icon.split("|");var g=a.ua+"?s="+c.id,e=("http:"==a.protocol?"http://eiv":"https://bs")+".baidu.com"+b[0]+"."+b[1];switch(b[1]){case "swf":b=d.ba("HolmesIcon"+a.l,e,b[2],b[3],"s="+g);break;case "gif":b='<a href="'+g+'" target="_blank"><img border="0" src="'+e+'" width="'+b[2]+'" height="'+b[3]+'"></a>';break;default:b='<a href="'+g+'" target="_blank">'+b[0]+"</a>"}document.write(b)}}};h.z.c("pv-b",e.init);return e})();
+(function(){function a(){return function(){h.b.a.nv=0;h.b.a.st=4;h.b.a.et=3;h.b.a.ep=h.G.la()+","+h.G.ha();h.b.j()}}function d(){clearTimeout(x);var a;w&&(a="visible"==document[w]);y&&(a=!document[y]);f="undefined"==typeof a?r:a;if((!n||!k)&&f&&l)u=r,p=+new Date;else if(n&&k&&(!f||!l))u=t,q+=+new Date-p;n=f;k=l;x=setTimeout(d,100)}function e(a){var p=document,k="";if(a in p)k=a;else for(var b=["webkit","ms","moz","o"],d=0;d<b.length;d++){var q=b[d]+a.charAt(0).toUpperCase()+a.slice(1);if(q in p){k=
+q;break}}return k}function b(a){if(!("focus"==a.type||"blur"==a.type)||!(a.target&&a.target!=window))l="focus"==a.type||"focusin"==a.type?r:t,d()}var g=mt.event,m=h.z,n=r,f=r,k=r,l=r,v=+new Date,p=v,q=0,u=r,w=e("visibilityState"),y=e("hidden"),x;d();(function(){var a=w.replace(/[vV]isibilityState/,"visibilitychange");g.c(document,a,d);g.c(window,"pageshow",d);g.c(window,"pagehide",d);"object"==typeof document.onfocusin?(g.c(document,"focusin",b),g.c(document,"focusout",b)):(g.c(window,"focus",b),
+g.c(window,"blur",b))})();h.G={la:function(){return+new Date-v},ha:function(){return u?+new Date-p+q:q}};m.c("pv-b",function(){g.c(window,"unload",a())});return h.G})();
+(function(){var a=mt.lang,d=h.q,e=h.load,b={wa:function(b){if((void 0===window._dxt||a.e(window._dxt,"Array"))&&"undefined"!==typeof h.b){var m=h.b.I();e([d.protocol,"//datax.baidu.com/x.js?si=",c.id,"&dm=",encodeURIComponent(m)].join(""),b)}},Ia:function(b){if(a.e(b,"String")||a.e(b,"Number"))window._dxt=window._dxt||[],window._dxt.push(["_setUserId",b])}};return h.ca=b})();
+(function(){function a(k){for(var b in k)if({}.hasOwnProperty.call(k,b)){var d=k[b];e.e(d,"Object")||e.e(d,"Array")?a(d):k[b]=String(d)}}function d(a){return a.replace?a.replace(/'/g,"'0").replace(/\*/g,"'1").replace(/!/g,"'2"):a}var e=mt.lang,b=mt.m,g=h.q,m=h.z,n=h.ca,f={r:[],C:0,U:t,init:function(){f.d=0;m.c("pv-b",function(){f.da();f.ea()});m.c("pv-d",f.fa);m.c("stag-b",function(){h.b.a.api=f.d||f.C?f.d+"_"+f.C:""});m.c("stag-d",function(){h.b.a.api=0;f.d=0;f.C=0})},da:function(){var a=window._hmt||
+[];if(!a||e.e(a,"Array"))window._hmt={id:c.id,cmd:{},push:function(){for(var a=window._hmt,k=0;k<arguments.length;k++){var p=arguments[k];e.e(p,"Array")&&(a.cmd[a.id].push(p),"_setAccount"===p[0]&&(1<p.length&&/^[0-9a-f]{32}$/.test(p[1]))&&(p=p[1],a.id=p,a.cmd[p]=a.cmd[p]||[]))}}},window._hmt.cmd[c.id]=[],window._hmt.push.apply(window._hmt,a)},ea:function(){var a=window._hmt;if(a&&a.cmd&&a.cmd[c.id])for(var b=a.cmd[c.id],d=/^_track(Event|MobConv|Order|RTEvent)$/,p=0,q=b.length;p<q;p++){var e=b[p];
+d.test(e[0])?f.r.push(e):f.M(e)}a.cmd[c.id]={push:f.M}},fa:function(){if(0<f.r.length)for(var a=0,b=f.r.length;a<b;a++)f.M(f.r[a]);f.r=s},M:function(a){var b=a[0];if(f.hasOwnProperty(b)&&e.e(f[b],"Function"))f[b](a)},_setAccount:function(a){1<a.length&&/^[0-9a-f]{32}$/.test(a[1])&&(f.d|=1)},_setAutoPageview:function(a){if(1<a.length&&(a=a[1],t===a||r===a))f.d|=2,h.b.R=a},_trackPageview:function(a){if(1<a.length&&a[1].charAt&&"/"===a[1].charAt(0)){f.d|=4;h.b.a.et=0;h.b.a.ep="";h.b.J?(h.b.a.nv=0,h.b.a.st=
+4):h.b.J=r;var b=h.b.a.u,d=h.b.a.su;h.b.a.u=g.protocol+"//"+document.location.host+a[1];f.U||(h.b.a.su=document.location.href);h.b.j();h.b.a.u=b;h.b.a.su=d}},_trackEvent:function(a){2<a.length&&(f.d|=8,h.b.a.nv=0,h.b.a.st=4,h.b.a.et=4,h.b.a.ep=d(a[1])+"*"+d(a[2])+(a[3]?"*"+d(a[3]):"")+(a[4]?"*"+d(a[4]):""),h.b.j())},_setCustomVar:function(a){if(!(4>a.length)){var b=a[1],e=a[4]||3;if(0<b&&6>b&&0<e&&4>e){f.C++;for(var p=(h.b.a.cv||"*").split("!"),q=p.length;q<b-1;q++)p.push("*");p[b-1]=e+"*"+d(a[2])+
+"*"+d(a[3]);h.b.a.cv=p.join("!");a=h.b.a.cv.replace(/[^1](\*[^!]*){2}/g,"*").replace(/((^|!)\*)+$/g,"");""!==a?h.b.setData("Hm_cv_"+c.id,encodeURIComponent(a),c.age):h.b.Aa("Hm_cv_"+c.id)}}},_setReferrerOverride:function(a){1<a.length&&(h.b.a.su=a[1].charAt&&"/"===a[1].charAt(0)?g.protocol+"//"+window.location.host+a[1]:a[1],f.U=r)},_trackOrder:function(d){d=d[1];e.e(d,"Object")&&(a(d),f.d|=16,h.b.a.nv=0,h.b.a.st=4,h.b.a.et=94,h.b.a.ep=b.stringify(d),h.b.j())},_trackMobConv:function(a){if(a={webim:1,
+tel:2,map:3,sms:4,callback:5,share:6}[a[1]])f.d|=32,h.b.a.et=93,h.b.a.ep=a,h.b.j()},_trackRTPageview:function(d){d=d[1];e.e(d,"Object")&&(a(d),d=b.stringify(d),512>=encodeURIComponent(d).length&&(f.d|=64,h.b.a.rt=d))},_trackRTEvent:function(d){d=d[1];if(e.e(d,"Object")){a(d);d=encodeURIComponent(b.stringify(d));var l=function(a){var b=h.b.a.rt;f.d|=128;h.b.a.et=90;h.b.a.rt=a;h.b.j();h.b.a.rt=b},m=d.length;if(900>=m)l.call(this,d);else for(var m=Math.ceil(m/900),p="block|"+Math.round(Math.random()*
+g.L).toString(16)+"|"+m+"|",q=[],u=0;u<m;u++)q.push(u),q.push(d.substring(900*u,900*u+900)),l.call(this,p+q.join("|")),q=[]}},_setUserId:function(a){a=a[1];n.wa();n.Ia(a)}};f.init();h.$=f;return h.$})();
+(function(){function a(){"undefined"===typeof window["_bdhm_loaded_"+c.id]&&(window["_bdhm_loaded_"+c.id]=r,this.a={},this.R=r,this.J=t,this.init())}var d=mt.url,e=mt.O,b=mt.D,g=mt.lang,m=mt.cookie,n=mt.i,f=mt.localStorage,k=mt.sessionStorage,l=h.q,v=h.z;a.prototype={K:function(a,b){a="."+a.replace(/:\d+/,"");b="."+b.replace(/:\d+/,"");var d=a.indexOf(b);return-1<d&&d+b.length===a.length},V:function(a,b){a=a.replace(/^https?:\/\//,"");return 0===a.indexOf(b)},A:function(a){for(var b=0;b<c.dm.length;b++)if(-1<
+c.dm[b].indexOf("/")){if(this.V(a,c.dm[b]))return r}else{var e=d.Q(a);if(e&&this.K(e,c.dm[b]))return r}return t},I:function(){for(var a=document.location.hostname,b=0,d=c.dm.length;b<d;b++)if(this.K(a,c.dm[b]))return c.dm[b].replace(/(:\d+)?[\/\?#].*/,"");return a},P:function(){for(var a=0,b=c.dm.length;a<b;a++){var d=c.dm[a];if(-1<d.indexOf("/")&&this.V(document.location.href,d))return d.replace(/^[^\/]+(\/.*)/,"$1")+"/"}return"/"},ma:function(){if(!document.referrer)return l.l-l.p>c.vdur?1:4;var a=
+t;this.A(document.referrer)&&this.A(document.location.href)?a=r:(a=d.Q(document.referrer),a=this.K(a||"",document.location.hostname));return a?l.l-l.p>c.vdur?1:4:3},getData:function(a){try{return m.get(a)||k.get(a)||f.get(a)}catch(b){}},setData:function(a,b,d){try{m.set(a,b,{domain:this.I(),path:this.P(),H:d}),d?f.set(a,b,d):k.set(a,b)}catch(e){}},Aa:function(a){try{m.set(a,"",{domain:this.I(),path:this.P(),H:-1}),k.remove(a),f.remove(a)}catch(b){}},Ga:function(){var a,b,d,e,g;l.p=this.getData("Hm_lpvt_"+
+c.id)||0;13===l.p.length&&(l.p=Math.round(l.p/1E3));b=this.ma();a=4!==b?1:0;if(d=this.getData("Hm_lvt_"+c.id)){e=d.split(",");for(g=e.length-1;0<=g;g--)13===e[g].length&&(e[g]=""+Math.round(e[g]/1E3));for(;2592E3<l.l-e[0];)e.shift();g=4>e.length?2:3;for(1===a&&e.push(l.l);4<e.length;)e.shift();d=e.join(",");e=e[e.length-1]}else d=l.l,e="",g=1;this.setData("Hm_lvt_"+c.id,d,c.age);this.setData("Hm_lpvt_"+c.id,l.l);d=l.l===this.getData("Hm_lpvt_"+c.id)?"1":"0";if(0===c.nv&&this.A(document.location.href)&&
+(""===document.referrer||this.A(document.referrer)))a=0,b=4;this.a.nv=a;this.a.st=b;this.a.cc=d;this.a.lt=e;this.a.lv=g},Ea:function(){for(var a=[],b=0,d=l.X.length;b<d;b++){var e=l.X[b],g=this.a[e];"undefined"!==typeof g&&""!==g&&a.push(e+"="+encodeURIComponent(g))}b=this.a.et;this.a.rt&&(0===b?a.push("rt="+encodeURIComponent(this.a.rt)):90===b&&a.push("rt="+this.a.rt));return a.join("&")},Ha:function(){this.Ga();this.a.si=c.id;this.a.su=document.referrer;this.a.ds=n.Ba;this.a.cl=n.colorDepth+"-bit";
+this.a.ln=n.language;this.a.ja=n.javaEnabled?1:0;this.a.ck=n.cookieEnabled?1:0;this.a.lo="number"===typeof _bdhm_top?1:0;this.a.fl=b.na();this.a.v="1.1.16";this.a.cv=decodeURIComponent(this.getData("Hm_cv_"+c.id)||"");1===this.a.nv&&(this.a.tt=document.title||"");var a=document.location.href;this.a.cm=d.k(a,l.ra)||"";this.a.cp=d.k(a,l.sa)||"";this.a.cw=d.k(a,l.qa)||"";this.a.ci=d.k(a,l.oa)||"";this.a.cf=d.k(a,l.ta)||"";this.a.cu=d.k(a,l.pa)||""},init:function(){try{this.Ha(),0===this.a.nv?this.Da():
+this.N(".*"),h.b=this,this.aa(),v.w("pv-b"),this.Ca()}catch(a){var b=[];b.push("si="+c.id);b.push("n="+encodeURIComponent(a.name));b.push("m="+encodeURIComponent(a.message));b.push("r="+encodeURIComponent(document.referrer));e.log(l.protocol+"//"+l.W+"?"+b.join("&"))}},Ca:function(){function a(){v.w("pv-d")}this.R?(this.J=r,this.a.et=0,this.a.ep="",this.j(a)):a()},j:function(a){var b=this;b.a.rnd=Math.round(Math.random()*l.L);v.w("stag-b");var d=l.protocol+"//"+l.W+"?"+b.Ea();v.w("stag-d");b.Y(d);
+e.log(d,function(d){b.N(d);g.e(a,"Function")&&a.call(b)})},aa:function(){var a=document.location.hash.substring(1),b=RegExp(c.id),e=-1<document.referrer.indexOf(l.Z),g=d.k(a,"jn"),f=/^heatlink$|^select$/.test(g);a&&(b.test(a)&&e&&f)&&(this.a.rnd=Math.round(Math.random()*l.L),a=document.createElement("script"),a.setAttribute("type","text/javascript"),a.setAttribute("charset","utf-8"),a.setAttribute("src",l.protocol+"//"+c.js+g+".js?"+this.a.rnd),g=document.getElementsByTagName("script")[0],g.parentNode.insertBefore(a,
+g))},Y:function(a){var b=k.get("Hm_unsent_"+c.id)||"",d=this.a.u?"":"&u="+encodeURIComponent(document.location.href),b=encodeURIComponent(a.replace(/^https?:\/\//,"")+d)+(b?","+b:"");k.set("Hm_unsent_"+c.id,b)},N:function(a){var b=k.get("Hm_unsent_"+c.id)||"";b&&(a=encodeURIComponent(a.replace(/^https?:\/\//,"")),a=RegExp(a.replace(/([\*\(\)])/g,"\\$1")+"(%26u%3D[^,]*)?,?","g"),(b=b.replace(a,"").replace(/,$/,""))?k.set("Hm_unsent_"+c.id,b):k.remove("Hm_unsent_"+c.id))},Da:function(){var a=this,b=
+k.get("Hm_unsent_"+c.id);if(b)for(var b=b.split(","),d=function(b){e.log(l.protocol+"//"+decodeURIComponent(b),function(b){a.N(b)})},g=0,f=b.length;g<f;g++)d(b[g])}};return new a})();
+(function(){var a=mt.s,d=mt.event,e=mt.url,b=mt.m;try{if(window.performance&&performance.timing&&"undefined"!==typeof h.b){var g=+new Date,m=function(a){var b=performance.timing,d=b[a+"Start"]?b[a+"Start"]:0;a=b[a+"End"]?b[a+"End"]:0;return{start:d,end:a,value:0<a-d?a-d:0}},n=s;a.za(function(){n=+new Date});var f=function(){var a,d,f;f=m("navigation");d=m("request");f={netAll:d.start-f.start,netDns:m("domainLookup").value,netTcp:m("connect").value,srv:m("response").start-d.start,dom:performance.timing.domInteractive-
+performance.timing.fetchStart,loadEvent:m("loadEvent").end-f.start};a=document.referrer;var k=a.match(/^(http[s]?:\/\/)?([^\/]+)(.*)/)||[],u=s;d=s;if("www.baidu.com"===k[2]||"m.baidu.com"===k[2])u=e.k(a,"qid"),d=e.k(a,"click_t");a=u;f.qid=a!=s?a:"";d!=s?(f.bdDom=n?n-d:0,f.bdRun=g-d,f.bdDef=m("navigation").start-d):(f.bdDom=0,f.bdRun=0,f.bdDef=0);h.b.a.et=87;h.b.a.ep=b.stringify(f);h.b.j()};d.c(window,"load",function(){setTimeout(f,500)})}}catch(k){}})();
+(function(){var a=h.q,d={init:function(){try{if("http:"===a.protocol){var b=document.createElement("IFRAME");b.setAttribute("src","http://boscdn.bpc.baidu.com/v1/holmes-moplus/mp-cdn.html");b.style.display="none";b.style.width="1";b.style.height="1";b.Oa="0";document.body.appendChild(b)}}catch(d){}}},e=navigator.userAgent.toLowerCase();-1<e.indexOf("android")&&-1===e.indexOf("micromessenger")&&d.init()})();
+(function(){var a=mt.i,d=mt.lang,e=mt.event,b=mt.m;if("undefined"!==typeof h.b&&(c.comm||!a.S||7<a.va)){var g,m,n,f,k=function(a){if(a.item){for(var b=a.length,d=Array(b);b--;)d[b]=a[b];return d}return[].slice.call(a)},l=function(a,b){for(var d in a)if(a.hasOwnProperty(d)&&b.call(a,d,a[d])===t)return t},v=function(a,e){var f={};f.n=g;f.t="clk";f.v=a;if(e){var m=e.getAttribute("href"),k=e.getAttribute("onclick")?""+e.getAttribute("onclick"):s,l=e.getAttribute("id")||"";n.test(m)?(f.sn="mediate",f.snv=
+m):d.e(k,"String")&&n.test(k)&&(f.sn="wrap",f.snv=k);f.id=l}h.b.a.et=86;h.b.a.ep=b.stringify(f);h.b.j();for(f=+new Date;400>=+new Date-f;);};if(c.comm)m="/zoosnet",g="swt",n=/swt|zixun|call|chat|zoos|business|talk|kefu|openkf|online|\/LR\/Chatpre\.aspx/i,f={click:function(){for(var a=[],b=k(document.getElementsByTagName("a")),b=[].concat.apply(b,k(document.getElementsByTagName("area"))),b=[].concat.apply(b,k(document.getElementsByTagName("img"))),d,e,g=0,f=b.length;g<f;g++)d=b[g],e=d.getAttribute("onclick"),
+d=d.getAttribute("href"),(n.test(e)||n.test(d))&&a.push(b[g]);return a}};else{m="/other-comm";g="other";n=/tencent:\/\/|qq\.(com|htm)|kefu|openkf|swt|zoos|53kf|doyoo|looyu|leyu|zixun|chat|talk|openQQ|open_ask|online/i;var p=/doyoo_mon_accept|d_panel_accept|contactR|^looyu_dom_\d*$/;f={click:function(){for(var a=[],b=k(document.getElementsByTagName("a")),b=[].concat.apply(b,k(document.getElementsByTagName("area"))),b=[].concat.apply(b,k(document.getElementsByTagName("img"))),d,e,g,f=0,m=b.length;f<
+m;f++)d=b[f],e=d.getAttribute("onclick"),g=d.getAttribute("href"),d=d.getAttribute("id"),(n.test(e)||n.test(g)||p.test(d))&&a.push(b[f]);return a}}}if("undefined"!==typeof f&&"undefined"!==typeof n){var q;m+=/\/$/.test(m)?"":"/";var u=function(a,b){if(q===b)return v(m+a,b),t;if(d.e(b,"Array")||d.e(b,"NodeList"))for(var e=0,g=b.length;e<g;e++)if(q===b[e])return v(m+a+"/"+(e+1),b[e]),t};e.c(document,"mousedown",function(a){a=a||window.event;q=a.target||a.srcElement;var b={};for(l(f,function(a,e){b[a]=
+d.e(e,"Function")?e():document.getElementById(e)});q&&q!==document&&l(b,u)!==t;)q=q.parentNode})}}})();(function(){var a=mt.event,d=mt.m;if(c.comm&&"undefined"!==typeof h.b){var e=+new Date,b={n:"anti",sb:0,kb:0,clk:0},g=function(){h.b.a.et=86;h.b.a.ep=d.stringify(b);h.b.j()};a.c(document,"click",function(){b.clk++});a.c(document,"keyup",function(){b.kb=1});a.c(window,"scroll",function(){b.sb++});a.c(window,"unload",function(){b.t=+new Date-e;g()});a.c(window,"load",function(){setTimeout(g,5E3)})}})();
+(function(){function a(){this.f=s}var d=mt.O,e=mt.i;a.prototype={xa:function(a){if(this.f)this.h(a,0);else if(this.isSupported()){try{this.f=new ActiveXObject("BDEXIE.BDExExtension.1"),this.T=r}catch(b){this.T=t}this.T?this.h(a,0):this.h(a,-1)}else this.h(a,-1)},Ja:function(){this.f&&delete this.f;this.f=s},Fa:function(a,b,d){if(this.f&&"SetLocalCache"in this.f)try{void 0===this.f.SetLocalCache(a,b)&&this.h(d,0)}catch(e){this.h(d,-1)}else this.h(d,-1)},ka:function(a,b){if(this.f&&"GetLocalCache"in
+this.f)try{this.h(b,this.f.GetLocalCache(a))}catch(d){this.h(b,"")}else this.h(b,"")},ga:function(a){if(this.f&&"GetCryptStr"in this.f)try{this.h(a,this.f.GetCryptStr("strEncryptID1"))}catch(b){this.h(a,"")}else this.h(a,"")},h:function(a,b){"function"===typeof a&&a(b,this)},isSupported:function(){if(window.ActiveXObject||"ActiveXObject"in window)try{return!!new ActiveXObject("BDEXIE.BDExExtension.1")}catch(a){}return t},ya:function(){var a=this;this.ga(function(b){void 0!==b&&""!==b&&(d.log("//datax.baidu.com/x.gif?dm="+
+encodeURIComponent("datax.baidu.com/webadapter/guid")+"&ac="+encodeURIComponent(b)+"&v=hm-webadapter-0.0.1&rnd="+Math.round(2147483647*Math.random())),a.Fa("hmKey",+new Date,function(){a.Ja()}))})}};if(e.S&&/^http(s)?:$/.test(document.location.protocol)){var b=new a;b.xa(function(a){0===a&&b.ka("hmKey",function(a){a=+a;(isNaN(a)||6048E5<+new Date-a)&&b.ya()})})}})();})();
+_application/javascript_9http://hm.baidu.com/h.js?a0a2372d4b7621d0bfe71f33c58a4bd8O�bplist00�^_X$versionX$objectsY$archiverT$top ���#)*0123GHIJKLMNOPQRSTUXYU$null�	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1�	��� �����$%'(WNS.base[NS.relative� ��_9http://hm.baidu.com/h.js?a0a2372d4b7621d0bfe71f33c58a4bd8�+,-.Z$classnameX$classesUNSURL�-/XNSObject#A��1��@ ��456>FWNS.keysZNS.objects�789:;<=�	�
+������?@ABCDE��������VServer\Content-TypeTDate_Content-Encoding^Content-Length]Cache-ControlTEtagVapache_application/javascript_Sun, 22 Nov 2015 10:26:55 GMTTgzipT8934_max-age=0, must-revalidate_ 015cfda5a3509df4dedc073c78186e86�+,VW\NSDictionary�V/_application/javascript�+,Z[_NSHTTPURLResponse�\]/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver�`a_WebResourceResponse�    # - 2 7 T Z u x |  � � � � � � � � � � � � � � � � � � � � � � � � � � � � �(17:CLNPW_jrtvxz|~������������������&+0Mpu����������             b              
+�O+GIF89a  �  ������!�  � ,       D ;Yimage/gif_$http://eiv.baidu.com/hmt/icon/21.gifORbplist00�YZX$versionX$objectsY$archiverT$top ���#)*0123EFGHIJKLMNOPQTU$null�	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1�	��� �����$%'(WNS.base[NS.relative� ��_$http://eiv.baidu.com/hmt/icon/21.gif�+,-.Z$classnameX$classesUNSURL�-/XNSObject#A��1��� ��456=DWNS.keysZNS.objects�789:;<�	�
+�����>?@AC�������TDate^Content-LengthWAD-MarkZConnection\Content-TypeYTx-Server_Sun, 22 Nov 2015 10:26:53 GMTR43VxiaomiUcloseYimage/gifTMiXr�+,RS\NSDictionary�R/�+,UV_NSHTTPURLResponse�WX/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver�[\_WebResourceResponse�    # - 2 7 Q W r u y |  � � � � � � � � � � � � � � � � � � � � � � � � � � � � "+468?GRY[]_acelnprtvxz������������	%)=K]`v             ]              x� !"_WebResourceTextEncodingName_WebResourceFrameNameOk�<!DOCTYPE html><html><head>
+
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+
+<link rel="shortcut icon" href="/faviconx.ico" type="image/x-icon">
+<link rel="icon" sizes="any" mask="" href="/faviconx.ico">
+
+<title>如何让办公室政治最小化 - 囧克斯</title>
+<link rel="stylesheet" type="text/css" href="http://jiongks.name/usr/themes/iamflat/pure.css">
+<link rel="stylesheet" type="text/css" href="http://jiongks.name/usr/themes/iamflat/style.css">
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://jiongks.name/usr/themes/iamflat/style-ie.css" />
+<![endif]-->
+<!-- 通过自有函数输出HTML头部信息 -->
+<meta name="description" content="来来来，看看办公室政治是个什么东西，以及如何将其最小化  
+翻译如有疏漏还请指正
+
+译自：[How to Minimize Politics in Your Company](http://ww...">
+<meta name="keywords" content="管理">
+<meta name="generator" content="Typecho 0.8/10.8.15">
+<meta name="template" content="iamflat">
+<link rel="pingback" href="http://jiongks.name/action/xmlrpc">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://jiongks.name/action/xmlrpc?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://jiongks.name/action/xmlrpc?wlw">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://jiongks.name/feed/blog/how-to-minimize-politics-in-your-company/">
+<link rel="alternate" type="application/rdf+xml" title="RSS 1.0" href="http://jiongks.name/feed/rss/blog/how-to-minimize-politics-in-your-company/">
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="http://jiongks.name/feed/atom/blog/how-to-minimize-politics-in-your-company/">
+<script type="text/javascript">
+//<![CDATA[
+var TypechoComment = {
+    dom : function (id) {
+        return document.getElementById(id);
+    },
+    
+    create : function (tag, attr) {
+        var el = document.createElement(tag);
+        
+        for (var key in attr) {
+            el.setAttribute(key, attr[key]);
+        }
+        
+        return el;
+    },
+
+    reply : function (cid, coid) {
+        var comment = this.dom(cid), parent = comment.parentNode,
+            response = this.dom('respond-post-214'), input = this.dom('comment-parent'),
+            form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+            textarea = response.getElementsByTagName('textarea')[0];
+
+        if (null == input) {
+            input = this.create('input', {
+                'type' : 'hidden',
+                'name' : 'parent',
+                'id'   : 'comment-parent'
+            });
+
+            form.appendChild(input);
+        }
+        
+        input.setAttribute('value', coid);
+
+        if (null == this.dom('comment-form-place-holder')) {
+            var holder = this.create('div', {
+                'id' : 'comment-form-place-holder'
+            });
+            
+            response.parentNode.insertBefore(holder, response);
+        }
+
+        comment.appendChild(response);
+        this.dom('cancel-comment-reply-link').style.display = '';
+        
+        if (null != textarea && 'text' == textarea.name) {
+            textarea.focus();
+        }
+        
+        return false;
+    },
+
+    cancelReply : function () {
+        var response = this.dom('respond-post-214'),
+        holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+
+        if (null != input) {
+            input.parentNode.removeChild(input);
+        }
+
+        if (null == holder) {
+            return true;
+        }
+
+        this.dom('cancel-comment-reply-link').style.display = 'none';
+        holder.parentNode.insertBefore(response, holder);
+        return false;
+    }
+}
+//]]>
+</script><style></style></head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="header" style="background-image: -webkit-linear-gradient(top, rgb(0, 144, 192), rgba(0, 144, 192, 0.498039)), url(http://jiongks.name/usr/themes/iamflat/bg/bg_16.jpg); background-color: rgb(0, 153, 204); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;">
+    <h1>
+        <a href="http://jiongks.name/" title="囧克斯"><span class="first-letter">囧</span>克斯</a>
+    </h1>
+    <p class="description">
+        这里是勾三股四的新家    </p>
+</div>
+<div id="nav" class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul>
+        <!--li>
+            <a href="http://jiongks.name/">
+                首页</a>
+        </li-->
+                        <li>
+            <a href="http://jiongks.name/all-demos/" title="demos">
+                demos</a>
+        </li>
+                <li>
+            <a href="http://jiongks.name/all-slides/" title="幻灯片">
+                幻灯片</a>
+        </li>
+                <li>
+            <a href="http://jiongks.name/screencasts/" title="视频">
+                视频</a>
+        </li>
+                <li>
+            <a href="http://jiongks.name/about/" title="关于">
+                关于</a>
+        </li>
+            </ul>
+</div>
+
+<div id="main">
+
+<div class="content">
+    <h2>如何让办公室政治最小化</h2>
+    <p>来来来，看看办公室政治是个什么东西，以及如何将其最小化<br>
+翻译如有疏漏还请指正</p>
+
+<p>译自：<a href="http://www.bhorowitz.com/how_to_minimize_politics_in_your_company">How to Minimize Politics in Your Company</a> via www.bhorowitz.com</p>
+
+<p><em>更新：跟身边一些朋友讨论之后，觉得之前翻译的标题“杜绝”言过了，还是规规矩矩翻译成了“最小化”</em></p>
+
+<hr>
+
+<blockquote>
+  <p>Who the f@#k you think you f$&amp;kin’ with<br>
+  I’m the f%*kin’ boss</p>
+  
+  <p>—Rick Ross, Hustlin'</p>
+</blockquote>
+
+<p>在我所有的从商经历中，我从没听过有人说：“我喜欢办公室政治”。但在我们的周围，令人深恶痛绝的政治又到处都是，甚至自己的公司就是如此。既然大家都不喜欢政治，那为什么它无处不在呢？</p>
+
+<p>政治行为几乎都源自 CEO。也许你会觉得：“我讨厌政治，我也不关心政治，但是我的周围充满了政治气味。这显然不是我造成的。”很遗憾，你并不需要怎么关心政治就会让你的周围充斥政治手段。实际上，很少关心政治的 CEO 才会让办公室充斥政治手段。不关心政治的 CEO 们往往会直接助涨政治行为。</p>
+
+<p>我这里说的政治，就是指员工追求自我职业发展多于价值产出和贡献。也许还有别样的政治类型，但是这类政治行为真的很烦。</p>
+
+<!--more-->
+
+<h3>为什么会这样</h3>
+
+<p>CEO 无意识的激励甚至有时刺激了政治行为，办公室政治由此而生。举个非常简单的例子，我们想象一下薪酬决策。作为一个 CEO，资深的员工会反复找你索要加薪。他们会提醒你自己得到的回报已经比市场行情低多了。他们甚至已经手握外面的 offer 了。你大可给他们加个薪。这听起来没什么问题，但你就这样强烈刺激了大家的政治行为。</p>
+
+<p>尤其是你在为一些对你的业务毫无价值的东西做奖励，员工会在你主动为他们的杰出表现嘉奖之前赚取更多的回报。为什么这样做很糟糕？我们仔细分析一下：</p>
+
+<ol>
+<li>其他“好胜”的同学会立刻感到不爽。注意不管是这种不爽还是之前的奖励都和实际的业绩毫无关系。你得花很多精力处理这些跟业绩无关的鸟事。重要的是，如果你有能力上限 (competent board) 的话，你不可能给每个人预期之外的涨薪，所以这会变成一件“先到先得”的事情。</li>
+<li>比较“与世无争”的 (但有可能很给力的) 同学会因为不关心政治而失去期末的涨薪。</li>
+<li>公司全员都上了一课：会哭的孩子有奶吃，关心政治的人会加薪。让暴风雨来的更猛烈些吧。</li>
+</ol>
+
+<p>现在我们来到一个更复杂的例子。你的 CFO 找到你说他希望在管理方面更进一步。他说他希望最终成为 COO，想了解自己需要具备什么样的技能才能胜任公司的这一职位。作为一个积极的主管，你可能会鼓励他实现自己的梦想。你告诉他你觉得他将来一定会是一个合格的 COO，并且应该开发某些方面的技能。额外的，你告诉他应该在管理上变得够强，这样其他高管 (executes) 才会愿意为他工作。一周之后，你的另一个高管就来找你诉苦了。她说 CFO 问她愿不愿意为他工作。她说你看好他成为最终的 COO。你之前遇到过这种事情吗？恭喜你摊上大事儿了。</p>
+
+<h3>如何政治最小化</h3>
+
+<h4>专家 vs. 菜鸟</h4>
+
+<p>避免政治往往会觉得不自然。它挑战了诸如开明思想或鼓励员工发展等管理最佳实践。</p>
+
+<p>管理高层和初级雇员的不同好比跟业余选手和职业拳手过招的不同。如果你跟一个普通人交手，你尽可自然为之不必担心。如果你想退一步，你可以先抬起你迈在前面的一只脚。如果你对垒一位专业拳手，估计就被击到了。职业拳手经过了年复一年的训练，他们善于利用你的每一处微小的失误。先抬起你迈在前面的一只脚向后退会让你在那一瞬间失去重心，这就是你的对手一直等待的机会。</p>
+
+<p>同样的，如果你管理一名初级雇员，他们跟你探讨职业发展的时候，你大可忘掉那些顾虑随性作答。但就像我们之前看到的，在对待那些高度敏感的老家伙时就不一样了。为了不被政治手段击倒，你需要在这方面提炼自己的技巧。</p>
+
+<h4>技巧</h4>
+
+<p>我作为一个 CEO 发展至今，我发现三条非常有效的将政治最小化的秘诀</p>
+
+<p><strong>1. 雇佣有正确目标的人</strong></p>
+
+<p>我之前描述的例子可能卷入了有目标，但本质并不关心政治的人。并不是所有的情况都是这样的。毫无疑问，把你的公司政治搞成美国参议院级别的方式就是雇佣错误目标的人。正如 <a href="https://zh.wikipedia.org/wiki/%E5%AE%89%E8%BF%AA%C2%B7%E8%91%9B%E6%B4%9B%E5%A4%AB">Andy Grove</a> 所说，正确的目标是把主管的个人成功和公司成功和公司产品的胜利息息相关。错误的目标是把主管的个人成功和公司的收入划清界限。</p>
+
+<p><strong>2. 为潜在的政治行为建立严格的机制并坚持贯彻</strong></p>
+
+<p>某些行动会助涨政治，比如这三点：</p>
+
+<ul>
+<li>绩效评估和薪酬调整</li>
+<li>组织结构设计与调整</li>
+<li>晋升</li>
+</ul>
+
+<p>我们来审视在每一种情况下，你该如何制定程序来杜绝不好的行为和政治的动机。</p>
+
+<p><em>绩效管理和薪酬调整</em></p>
+
+<p>公司的绩效管理和薪酬调整通常都有一些滞后。这并不意味着他们没有认可员工或不给员工加薪，这仅仅是因为他们仓促特许此事在政治手段面前是非常脆弱的。通过规范合理的结构、正规的绩效评估和薪酬评估，你会在更高的高度明确薪水和股票的涨幅情况。尤其对高管的薪酬调整尤为重要，因为这样做会杜绝政治。在上面的例子中，CEO 应该有一套滴水不漏的绩效和薪酬政策，并且跟高管明确他的薪酬会被其他所有人评估。理想状态下，高管的薪酬体系应该有董事会的参与。这会 a) 有助于更好的管理 b) 让意外更难出现。</p>
+
+<p><em>组织结构设计与调整</em></p>
+
+<p>如果你管理高级员工，他们会一次又一次希望扩展自己的职责范围。在上面的例子中，CFO 希望成为 COO。在其它情形下，市场的一把手都希望把销售和市场一起运作起来，或工程的一把手希望把研发和产品管理都握在手上。当有些人向你提出类似的要求时，你要非常小心作答，因为你所讲的每一句话都会变成定时炸弹。一般情况下最好什么都别说。最多问问为什么，并且要牢记不要对对方提及的原因做出任何回应和解释。如果你表明了你的想法，那它一定会被传出去的，谣言会变得到处都是，你的周围会被业务无关的讨论所淹没。你应该基于常规的考虑评估你的组织结构，为了做出正确的决定，你可以获取必要的信息，但不要把你的计划透露或暗示出去。一旦你做了决定，那么就立刻执行组织结构调整：别让谣言先传到园区里。</p>
+
+<p><em>晋升</em></p>
+
+<p>每次你的公司提拔某些人的时候，其他同级别的人都会对此指指点点，探讨这个人是因为业绩好还是会来事儿才得到晋升的。如果答案是后者，那么其他人的反应无外乎是下面这三种：</p>
+
+<ol>
+<li>他们闷闷不乐，感觉被低估了</li>
+<li>他们表现出不认同，跟这个人对着干，并在背后使坏</li>
+<li>他们决定也学这个人的政治手段，因此产生了更多不合理的晋升</li>
+</ol>
+
+<p>很明显哪种行为你都不希望看到。因此你必须有一个正式的、透明的、有正当理由的晋升流程来决定每个人的晋升。通常这个流程是由其他团队成员参与的 (一般晋升流程要让其他主管参与，这些主管的工作性质和这个人类似，高管的晋升流程里应该有董事会的参与)。这个流程的目的是两面的。一方面它会让组织相信公司至少是基于业绩进行晋升评估的，另一方面流程的结果足以充分解释你的晋升。</p>
+
+<p><strong>3. 小心别人打来的“小报告”</strong></p>
+
+<p>一旦你的组织壮大到一定规模，团队成员就会不断相互投诉和抱怨。有时这些批评是非常激进的。要非常小心留意你听到的话以及它背后传递的信息。如果单纯的没有任何防备的解答员工提出的问题，你很容易把你内心认同的信息传递出去。如果大家在公司认为你觉得某个高管不够好，这样的信息会迅速传播开来，并且不会有人求证真相的。最后，大家都不再相信那个“问题高管”，做事也不再有效率。</p>
+
+<p>这里有两种典型的你会听到的抱怨：</p>
+
+<ol>
+<li>抱怨一个高管的行为</li>
+<li>抱怨一个高管的能力和业绩</li>
+</ol>
+
+<p>对于第一种问题，一般最好的处理方式就是找投诉和被投诉的双方高管拉到一个小黑屋里当面把事情解释清楚。通常一个当面的沟通就可以挽回冲突和错误 (如有)。不要试图隔空解决问题，那样只会带来问题和政治。</p>
+
+<p>第二种问题会更少见同时处理起来也更复杂。如果你的一个高管鼓起勇气质疑他同伴的能力，那么很有可能，这两个人之间有很严重的问题。如果你遇到了这种问题，你一般会得到下面两种回复中的一种：a) 你会从他们那里得知一些你已经知道的事情，或者 b) 他们会给你“惊喜”。</p>
+
+<p>如果他们告诉你的是你已经知道的事情，那么最主要的问题就是你已经让这个问题存在太久了。不论你迟迟不解决问题的理由是什么，你把这件事拖太久了导致现在你的团队已经向这名主管发难。你必须用最快速度解决这个问题。基本上你是要解雇这名高管了，因为我看到过的高官们只有提升得自己业绩和技能的，却从没有重拾起团队的信任和支持的。</p>
+
+<p>而如果你收到的是信息是你从未了解过的，那么你必须立刻打断他，让这位抱怨别人的高管明确，你没办法确定这个评判。你不希望在重新审视他的表现之前就做处理。你也不希望大家觉得投诉是万能的。一旦你终止了谈话，你必须立刻重新审视这名被抱怨的员工。如果你发现他表现的很好，那么你必须找出抱怨他的人的动机并把它处理好，不要让这种言论占上风。如果你发现这个员工确实有问题，那么再回到抱怨他的人提供的信息，这时你应该明确处理表现不好的人。</p>
+
+<h3>总结</h3>
+
+<p>作为 CEO，你必须系统的考虑自己的一言一行导致的结果。开放，负责，目标导向才是王道，尽量避免错误的激励方式。</p>
+</div>
+
+<div id="comments">
+        
+        <div id="respond-post-214" class="respond">
+    
+    <div class="cancel-comment-reply">
+    <a id="cancel-comment-reply-link" href="http://jiongks.name/blog/how-to-minimize-politics-in-your-company/#respond-post-214" rel="nofollow" style="display:none" onclick="return TypechoComment.cancelReply();">取消回复</a>    </div>
+    
+	<h2 id="response">添加新评论 »</h2>
+	<form method="post" action="http://jiongks.name/blog/how-to-minimize-politics-in-your-company/comment" id="comment_form" class="pure-form">
+                <fieldset class="pure-group">
+            <input type="text" name="author" id="author" placeholder="称呼" required="" value="">
+            <input type="email" name="mail" id="mail" placeholder="电子邮件" required="" value="">
+            <input type="url" name="url" id="url" placeholder="网站" value="">
+        </fieldset>
+                <fieldset>
+    		<textarea rows="5" name="text" class="textarea" style="max-width: 30em; width: 100%;"></textarea>
+        </fieldset>
+        <fieldset>
+    		<button class="pure-button pure-button-primary">提交评论</button> (请至少包含一个汉字，且汉字不能比日本字少)
+        </fieldset>
+	</form>
+    </div>
+    </div>
+
+<div id="sidebar" class="pure-g-r">
+
+        <div class="widget pure-u-1-3"><h3>问卷</h3><ul><li>暂无</li></ul></div>    
+        <div class="widget pure-u-1-3">
+        <h3>广告</h3>
+        <p style="padding: 0 20px;">我发起的开源项目<br>
+        <a href="http://jinjiang.github.com/h5slides/" target="_blank">H5Slides</a><br>
+        <a href="http://zorro.io/" target="_blank">Zorro</a><br>
+        欢迎了解</p>
+    </div>
+    
+        <div class="widget large pure-u-2-3">
+		<h3>最新文章</h3>
+        <ul>
+            <li><a href="http://jiongks.name/blog/vuejs-1-0-0-release/">Vue.js 1.0.0 发布了！</a></li>
+<li><a href="http://jiongks.name/blog/how-to-become-a-great-front-end-engineer/">如何成为一名卓越的前端工程师</a></li>
+<li><a href="http://jiongks.name/blog/our-image-workflow/">手机淘宝前端的图片相关工作流程梳理</a></li>
+<li><a href="http://jiongks.name/blog/how-to-minimize-politics-in-your-company/">如何让办公室政治最小化</a></li>
+<li><a href="http://jiongks.name/blog/vue-code-review/">Vue.js 源码学习笔记</a></li>
+<li><a href="http://jiongks.name/blog/try-fullstack-in-timeline-app/">从原型到发布——“团队时间线” 1.0 开发心得</a></li>
+<li><a href="http://jiongks.name/blog/just-vue/">Vue + webpack 项目实践</a></li>
+<li><a href="http://jiongks.name/blog/try-koajs/">用 Koa 写服务体验</a></li>
+<li><a href="http://jiongks.name/blog/config-in-webcomponents/">webcomponents 笔记 之 配置管理</a></li>
+<li><a href="http://jiongks.name/blog/2014-2015/">14}, {15</a></li>
+        </ul>
+    </div>
+    
+        <div class="widget large pure-u-2-3">
+		<h3>最近回复</h3>
+        <ul>
+                            <li><a href="http://jiongks.name/blog/plugin-baidu-tongji/#comment-111084">tty228</a>: 一直安装不成功- -
+不知道是不是百度统计换了新版的原因，审视元素能看到h.gif但是统计一直提示检...</li>
+                    <li><a href="http://jiongks.name/blog/plugin-baidu-tongji/#comment-111083">tty228</a>: 谢谢博主，拿去用了~~</li>
+                    <li><a href="http://jiongks.name/blog/vue-code-review/#comment-111082">cxczy</a>: 总结的很好，Vue如此小巧却又这么多优点</li>
+                    <li><a href="http://jiongks.name/blog/just-vue/#comment-110923">Randy</a>: 用多了之后你会发现 require css 是很方便的东西，因为用 style-loader 和其它...</li>
+                    <li><a href="http://jiongks.name/all-demos/#comment-110828">elevensky</a>: 大爱</li>
+                    <li><a href="http://jiongks.name/blog/naming-css-stuff-is-really-hard/#comment-110750">云库网</a>: 字体有点大，css命名还是标准加习惯为好</li>
+                    <li><a href="http://jiongks.name/about/#comment-110392">影乐</a>: 名字好有意思</li>
+                    <li><a href="http://jiongks.name/about/#comment-110215">常某某</a>: = =我总觉得你的网站设计很奇怪。或许是相邻两块之间并无色差。而且宽度很小。总感觉两边空出很多来。特...</li>
+                    <li><a href="http://jiongks.name/about/#comment-109912">小四</a>: 棒棒哒</li>
+                    <li><a href="http://jiongks.name/blog/plugin-baidu-tongji/#comment-109616">SuperZhang</a>: 你的字确实很大....我也是用手动添加的.
+我是来保持队形的</li>
+                </ul>
+    </div>
+    
+        <!--div class="widget pure-u-1-3">
+		<h3>分类</h3>
+        <ul>
+            <li><a href="http://jiongks.name/category/default/">默认分类</a> (53)</li>
+        </ul>
+	</div-->
+    
+        <div class="widget pure-u-1-3">
+		<h3>归档</h3>
+        <ul>
+            <li><a href="http://jiongks.name/2015/10/">October 2015</a></li>
+<li><a href="http://jiongks.name/2015/08/">August 2015</a></li>
+<li><a href="http://jiongks.name/2015/07/">July 2015</a></li>
+<li><a href="http://jiongks.name/2015/06/">June 2015</a></li>
+<li><a href="http://jiongks.name/2015/03/">March 2015</a></li>
+<li><a href="http://jiongks.name/2015/01/">January 2015</a></li>
+<li><a href="http://jiongks.name/2014/10/">October 2014</a></li>
+<li><a href="http://jiongks.name/2014/09/">September 2014</a></li>
+<li><a href="http://jiongks.name/2014/01/">January 2014</a></li>
+<li><a href="http://jiongks.name/2013/12/">December 2013</a></li>
+<li><a href="http://jiongks.name/2013/10/">October 2013</a></li>
+<li><a href="http://jiongks.name/2013/09/">September 2013</a></li>
+<li><a href="http://jiongks.name/2013/07/">July 2013</a></li>
+<li><a href="http://jiongks.name/2013/06/">June 2013</a></li>
+<li><a href="http://jiongks.name/2013/05/">May 2013</a></li>
+<li><a href="http://jiongks.name/2013/03/">March 2013</a></li>
+<li><a href="http://jiongks.name/2013/02/">February 2013</a></li>
+<li><a href="http://jiongks.name/2013/01/">January 2013</a></li>
+<li><a href="http://jiongks.name/2012/12/">December 2012</a></li>
+<li><a href="http://jiongks.name/2012/11/">November 2012</a></li>
+<li><a href="http://jiongks.name/2012/09/">September 2012</a></li>
+<li><a href="http://jiongks.name/2012/08/">August 2012</a></li>
+<li><a href="http://jiongks.name/2012/07/">July 2012</a></li>
+<li><a href="http://jiongks.name/2012/06/">June 2012</a></li>
+<li><a href="http://jiongks.name/2012/05/">May 2012</a></li>
+<li><a href="http://jiongks.name/2012/04/">April 2012</a></li>
+<li><a href="http://jiongks.name/2012/03/">March 2012</a></li>
+        </ul>
+	</div>
+    
+    	<div class="widget pure-u-1-3">
+		<h3>其它</h3>
+        <ul>
+                            <li class="last"><a href="http://jiongks.name/admin/login.php">登录</a></li>
+                        <li><a href="http://validator.w3.org/check/referer">Valid XHTML</a></li>
+            <li><a href="http://www.typecho.org">Typecho</a></li>
+        </ul>
+	</div>
+    
+        <div class="widget large pure-u-2-3">
+        <h3>链接</h3>
+        <ul>
+            <li><a href="http://www.maxthon.cn/" title="我的老东家" target="_blank">傲游浏览器</a></li>
+<li><a href="https://github.com/Jinjiang" title="" target="_blank">我的Github</a></li>
+        </ul>
+    </div>
+    
+</div>
+</div>
+
+<div id="footer" style="background-image: -webkit-linear-gradient(top, rgba(255, 96, 0, 0.498039), rgb(255, 96, 0)), url(http://jiongks.name/usr/themes/iamflat/bg/bg_3.jpg); background-color: rgb(255, 102, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;">
+    <a href="http://jiongks.name/">囧克斯</a> is powered by <a href="http://www.typecho.org">Typecho)))</a><br><a href="http://jiongks.name/feed/">文章 RSS</a> and <a href="http://jiongks.name/feed/comments/">评论 RSS</a>
+    我是百度统计：<script src="http://hm.baidu.com/h.js?a0a2372d4b7621d0bfe71f33c58a4bd8"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=a0a2372d4b7621d0bfe71f33c58a4bd8" target="_blank"><img border="0" src="http://eiv.baidu.com/hmt/icon/21.gif" width="20" height="20"></a></div>
+
+</div>
+
+<script>
+(function () {
+    var pages = document.querySelectorAll('.page-navigator a');
+    pages = [].slice.call(pages);
+    pages.forEach(function (page) {
+        page.className = 'pure-button';
+        if (page.parentNode.className === 'current') {
+            page.className += ' pure-button-disabled';
+        }
+    });
+})();
+(function () {
+    var header = document.querySelector('#header');
+    if (header) {
+        var bgImage = 'http://jiongks.name/usr/themes/iamflat/bg/bg_' + Math.ceil(Math.random() * 16) + '.jpg';
+        if (window.innerWidth <= 640) {
+            bgImage = bgImage.replace('.jpg', '_m.jpg');
+        }
+        header.style.background = '#09c none no-repeat center center';
+        header.style.backgroundSize = 'cover';
+        header.style.backgroundImage = '-webkit-linear-gradient(top, rgba(0, 144, 192, 1), rgba(0, 144, 192, 0.5)), url(' + bgImage + ')';
+        header.style.backgroundImage = '-moz-linear-gradient(top, rgba(0, 144, 192, 1), rgba(0, 144, 192, 0.5)), url(' + bgImage + ')';
+        header.style.backgroundImage = '-ms-linear-gradient(top, rgba(0, 144, 192, 1), rgba(0, 144, 192, 0.5)), url(' + bgImage + ')';
+        header.style.backgroundImage = 'linear-gradient(top, rgba(0, 144, 192, 1), rgba(0, 144, 192, 0.5)), url(' + bgImage + ')';
+    }
+})();
+(function () {
+    var footer = document.querySelector('#footer');
+    if (footer) {
+        var bgImage = 'http://jiongks.name/usr/themes/iamflat/bg/bg_' + Math.ceil(Math.random() * 16) + '.jpg';
+        if (window.innerWidth <= 640) {
+            bgImage = bgImage.replace('.jpg', '_m.jpg');
+        }
+        footer.style.background = '#f60 none no-repeat center center';
+        footer.style.backgroundSize = 'cover';
+        footer.style.backgroundImage = '-webkit-linear-gradient(top, rgba(255, 96, 0, 0.5), rgba(255, 96, 0, 1)), url(' + bgImage + ')';
+        footer.style.backgroundImage = '-moz-linear-gradient(top, rgba(255, 96, 0, 0.5), rgba(255, 96, 0, 1)), url(' + bgImage + ')';
+        footer.style.backgroundImage = '-ms-linear-gradient(top, rgba(255, 96, 0, 0.5), rgba(255, 96, 0, 1)), url(' + bgImage + ')';
+        footer.style.backgroundImage = 'linear-gradient(top, rgba(255, 96, 0, 0.5), rgba(255, 96, 0, 1)), url(' + bgImage + ')';
+    }
+})();
+(function () {
+    var title = document.querySelector('#header h1 a');
+    var text = title.innerText;
+    var firstLetter = document.createElement('span');
+    firstLetter.className = 'first-letter';
+    firstLetter.innerText = text.substr(0, 1);
+    var otherLetters = document.createTextNode(text.substr(1));
+    title.innerHTML = '';
+    title.appendChild(firstLetter);
+    title.appendChild(otherLetters);
+})();
+</script>
+
+
+
+</body></html>Ytext/htmlUUTF-8P_Bhttp://jiongks.name/blog/how-to-minimize-politics-in-your-company/            1   6   ?   Q   g   v   �  ��  ��  ��  ��  ��  ��  �1  ��  �  X  q  � � � � �  ] h � � t� t� t� t�             #             t�
