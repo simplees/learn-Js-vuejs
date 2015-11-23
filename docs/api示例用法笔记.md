@@ -4,10 +4,19 @@
 
 ## 2015 1123
 
-### 过滤器 debounce
+* 过滤器 debounce
 > http://cn.vuejs.org/api/#debounce
 ```
 //延迟500毫秒
 <input @keyup="onKeyup | debounce 500">
 ```
 
+
+* 指令 v-html
+> http://cn.vuejs.org/api/#v-html
+```
+//在页面插入 v-html中内容
+<div v-html="html"></div>
+<!-- 相同 -->
+<div>{{{html}}}</div>
+```
