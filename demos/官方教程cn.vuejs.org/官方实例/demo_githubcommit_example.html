@@ -30,7 +30,7 @@
 <div id="demo">
     <h1>Latest Vue.js Commits</h1>
     <template v-for="branch in branches">
-        <input typ="radio"
+        <input type="radio"
                name="branch"
                :id="branch"
                :value="branch">
@@ -81,10 +81,23 @@
         },
         filters:{
             truncate:function(v){
-                var newline = v.indexof('\n')
+                var newline = v.indexOf('\n')
                 return newline > 0 ? v.slice(0,newline) : v
             },
-            formateDate
+            formateDate:function(v){
+                return v.replace(/T|Z/g, ' ')
+            }
+        },
+        methods:{
+            fetchData: function (){
+                var xhr = new XMLHttpRequest()
+                var self = this
+                xhr.open('GET',apiURL + self.currentBranch)
+                xhr.onload = function(){
+                    self.commits = JSON.parse(xhr.responseText)
+                }
+                xhr.send()
+            }
         }
     })
 </script>
