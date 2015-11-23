@@ -10,9 +10,35 @@
 </head>
 <body>
 
+<!--在注册之后，便可以在 Vue.js 模板中这样用（记着添加前缀 v-）：-->
+<div v-my-directive="someValue"></div>
+
 <script src="assets/boot4/jquery.min.js"></script>
 <script src="assets/boot4/bootstrap.min.js"></script>
 <script src="assets/vuejs/vue.min.js"></script>
+
+<script>
+    Vue.directive('my-directive',{
+        bind:function(){
+            //准备工作
+            //例如,添加时间处理器或只需要运行一次的高耗任务
+        },
+        update: function(newValue,oldValue){
+            //值更新时的工作
+            //也会以初始值为参数调用一次
+        },
+        unbind: function(){
+            //清理工作
+            //例如,删除bind()添加的事件监听器
+        }
+    })
+
+    //<!--当只需要 update 函数时，可以传入一个函数替代定义对象：-->
+    Vue.directive('my-directive', function (value) {
+        // 这个函数用作 update()
+    })
+</script>
+
 
 </body>
 </html>
