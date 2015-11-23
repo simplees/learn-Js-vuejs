@@ -57,10 +57,10 @@
     new Vue({
         el: '#editor',
         data:{
-            input:'# hello'
+            input:'* hello'
         },
-        filters:{
-            marked:marked
+        filters:{ //过滤器预处理输入内容并显示
+            marked: marked
         }
     })
 </script>
