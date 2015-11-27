@@ -3,7 +3,7 @@ var App = require('./app.vue')
 
 new Vue({
     el: 'body',
-    components:{
-        app:App
+    components: {
+        app: App
     }
 })
