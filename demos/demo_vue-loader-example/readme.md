@@ -307,7 +307,7 @@ export default {
 npm run build
 ```
 
-![图](/pics/1npmrunbuild.gif)
+![图](pics/1npmrunbuild.gif)
 
 * 运行
 
@@ -315,7 +315,7 @@ npm run build
 npm run dev
 ```
 
-![图](/pics/2npmrundev.gif)
+![图](pics/2npmrundev.gif)
 
 * 查看
 
@@ -323,4 +323,4 @@ npm run dev
 浏览器中访问 localhost:8080
 ```
 
-![图](/pics/3local.gif)
+![图](pics/3local.gif)
