@@ -3,7 +3,9 @@
 >  * 来自vue官方示例：https://github.com/vuejs/vue-loader-example
 >  * 使用了vuejs和webpack，以及一系列webpack加载器，如vue-loader
 >  * 依葫芦画瓢，试了试，有些具体分析还需要再学习学习，先简单记录下具体的做法，屡屡思绪。
+
 ## 目录结构
+
 ```
 - demo/
   + package.json //npm配置文件
@@ -22,11 +24,15 @@
 ```
 
 ## 初始化npm
+
 1.生成npm配置文件 package.json
+
 ```
 npm init
 ```
+
 2.可以粘贴如下配置内容替换到package.json中，或者根据变动进行修改
+
 ```
 {
   "name": "demo_vue-loader-example",
@@ -69,16 +75,21 @@ npm init
   }
 }
 ```
+
 3.下载node模块
+
 ```
 npm install
 ```
+
 >  * 其实我是一条条用`npm i xxx --save-dev`敲的，没有在`package.json`里面的` "devDependencies":{}`手动添加内容，可以一个个装（也可以一起敲）如 `npm i webpack --save-dev`,`npm i vue --save`
 >  * `--save-dev` 把依赖名和版本要求放在了 ` "devDependencies":{}`，
 >  * `--save` 放在了  ` "dependencies":{}`
 >  * 每敲一个下载完后可以看到` "devDependencies":{}`依赖内容的添加
 
+
 ## 新建index.html用于展示最终页面
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -94,6 +105,7 @@ npm install
 ```
 
 ## 新建webpack.config.js用于配置webpack
+
 ```
 var webpack = require('webpack')
 
@@ -145,7 +157,9 @@ if (process.env.NODE_ENV === 'production') {
 ```
 
 ## 新建src目录用于存放开发文件
+
 ### 新建入口文件`main.js`
+
 ```
 var Vue = require('vue')
 var App = require('./app.vue')
@@ -159,7 +173,9 @@ new Vue({
 ```
 
 ### 新建组件布局文件`app.vue`
+
 > 组件布局将在这里设置，`.vue文件将由vue-loader进行加载，.vue内同时包含html、css、js源码，使组件的独立，组件之间可以尽可能地解耦，便于开发维护`
+
 ```
 <template lang="jade">
 div
@@ -201,9 +217,11 @@ body
 ```
 
 ### 新建components文件夹
+
 > 用于开发具体的子组件，均以`.vue`的后缀呈现
 
 * a.vue
+
 ```
 <style scoped>
 .container {
@@ -232,6 +250,7 @@ export default {
 ```
 
 * b.vue
+
 ```
 <style scoped>
 .container {
@@ -274,7 +293,9 @@ export default {
 }
 </script>
 ```
+
 ### 新建assets文件夹用于放一些资源
+
 * 此项目下有一张图
 ![](https://github.com/vuejs/vue-loader-example/blob/master/src/assets/logo.png?raw=true)
 
@@ -289,12 +310,17 @@ npm run build
 ![图](/pics/1npmrunbuild.gif)
 
 * 运行
+
 ```
 npm run dev
 ```
+
 ![图](/pics/2npmrundev.gif)
+
 * 查看
+
 ```
 浏览器中访问 localhost:8080
 ```
+
 ![图](/pics/3local.gif)
